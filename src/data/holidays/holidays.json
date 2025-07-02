@@ -1,0 +1,22 @@
+[
+  { "name": "New Year", "date": "01 Jan 2025" },
+  { "name": "Pongal", "date": "14 Jan 2025" },
+  { "name": "Republic Day", "date": "26 Jan 2025" },
+  { "name": "Holi", "date": "14 Mar 2025" },
+  { "name": "Gudi Padwa", "date": "30 Mar 2025" },
+  { "name": "Ramzan Eid", "date": "31 Mar 2025" },
+  { "name": "Rongali Bihu", "date": "14 Apr 2025" },
+  { "name": "Good Friday", "date": "18 Apr 2025" },
+  { "name": "Labour Day/May Day", "date": "01 May 2025" },
+  { "name": "Eid-ul-Azha", "date": "07 Jun 2025" },
+  { "name": "Independence Day", "date": "15 Aug 2025" },
+  { "name": "Onam", "date": "05 Sep 2025" },
+  { "name": "Durga Puja", "date": "30 Sep 2025" },
+  { "name": "Durga Puja", "date": "01 Oct 2025" },
+  { "name": "Dusshera/ Durga Puja/ Gandhi Jayanti", "date": "02 Oct 2025" },
+  { "name": "Diwali/Ugadi", "date": "21 Oct 2025" },
+  { "name": "Goverdhan Puja", "date": "22 Oct 2025" },
+  { "name": "Bhai Dooj", "date": "23 Oct 2025" },
+  { "name": "Chatt Pooja-Sandhya Argh", "date": "27 Oct 2025" },
+  { "name": "Kannada Rajyotsava", "date": "01 Nov 2025" }
+]
