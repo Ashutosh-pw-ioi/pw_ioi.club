@@ -150,11 +150,13 @@ const Navbar = () => {
 
           {/* Student Login Button */}
           <div className="hidden md:block">
-            <Button className="bg-accent hover:bg-accent-dark text-accent-foreground font-medium transition-colors duration-200">
-              <CircleUser className="w-4 h-4 mr-2" />
-              Student Login
-            </Button>
-          </div>
+  <Link href="https://student-profile-frontend-inky.vercel.app/">
+    <Button className="bg-accent hover:bg-accent-dark text-accent-foreground font-medium transition-colors duration-200">
+      <CircleUser className="w-4 h-4 mr-2" />
+      Student Login
+    </Button>
+  </Link>
+</div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
