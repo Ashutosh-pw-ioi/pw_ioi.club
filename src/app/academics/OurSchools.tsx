@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { 
-  Code, PieChart, Stethoscope, PlayCircle, ChevronRight, MapPin, X
+  Code, PieChart, Stethoscope, PlayCircle, ChevronRight, MapPin, X, LucideIcon
 } from 'lucide-react';
 
 type SchoolKey = 'technology' | 'management' | 'healthcare';
@@ -12,7 +12,7 @@ interface CampusData {
 
 interface SchoolData {
   title: string;
-  icon: any;
+  icon: LucideIcon;
   description: string;
   departments: string[];
   recruiters: string[];
@@ -199,6 +199,8 @@ const OurSchools = () => {
                     className="aspect-video relative cursor-pointer group"
                     onClick={openVideoModal}
                   >
+                    {/* Next.js Image component would be better, but using img for now */}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={`https://img.youtube.com/vi/${schools[activeSchool].videoId}/maxresdefault.jpg`}
                       alt={schools[activeSchool].videoTitle}
