@@ -1,0 +1,272 @@
+[
+  {
+    "name": "Abhinav Jain",
+    "city": "",
+    "state": "",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890950/Artboard_7_upgkrr.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Abhishek Kumar",
+    "city": "",
+    "state": "",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_3_eflepj.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Amrita P",
+    "city": "",
+    "state": "",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_8_hoyfxo.png",
+    "linkedIn": ""
+    ,
+    "Male":"false"
+  },
+  {
+    "name": "Atchaya R",
+    "city": " Madurai",
+    "state": "Tamil Nadu",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471130/Avatar3_Male_dvztet.png",
+    "linkedIn": ""
+    ,
+    "Male":"false"
+  },
+  {
+    "name": "Deeksha Pawar",
+    "city": "",
+    "state": "",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737445586/Avatar_i4xb7l.png",
+    "linkedIn": ""
+    ,
+    "Male":"false"
+  },
+  {
+    "name": "Deepak",
+    "city": "Bhadurpally",
+    "state": "Andhra Pradesh",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737442156/Purple_Pink_Gradient_Man_3D_Avatar_wa2ato.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Deepak Kumar Mahto",
+    "city": " Bengaluru",
+    "state": "Karnataka",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890950/Artboard_7_upgkrr.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Iffa Naaz",
+    "city": "Okhla",
+    "state": "Delhi",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_3_eflepj.png",
+    "linkedIn": ""
+    ,
+    "Male":"false"
+  },
+  {
+    "name": "Jasleen Kaur",
+    "city": "",
+    "state": "",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_8_hoyfxo.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Jaypal Pandey",
+    "city": "Gorakhpur",
+    "state": "Uttar Pradesh",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471130/Avatar3_Male_dvztet.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Kashish",
+    "city": "Nehru Vihar",
+    "state": "Delhi",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_1_ejqebt.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Khushal",
+    "city": "Nashik",
+    "state": "Maharashtra",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737445586/Avatar_i4xb7l.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Mayank Ranjan",
+    "city": "",
+    "state": "",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737442156/Purple_Pink_Gradient_Man_3D_Avatar_wa2ato.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Md Kaif Alam",
+    "city": "",
+    "state": "",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890950/Artboard_7_upgkrr.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Parvathi Chandhana",
+    "city": "",
+    "state": "",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_3_eflepj.png",
+    "linkedIn": ""
+    ,
+    "Male":"false"
+  },
+  {
+    "name": "Prajwal Kagalagomb",
+    "city": " Bengaluru",
+    "state": "Karnataka",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_8_hoyfxo.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Pulkit Vyas",
+    "city": "Sikar",
+    "state": "Rajasthan",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471130/Avatar3_Male_dvztet.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Raj Mishra",
+    "city": "",
+    "state": "",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737445586/Avatar_i4xb7l.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Rajdeep Debnath",
+    "city": "",
+    "state": "",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737442156/Purple_Pink_Gradient_Man_3D_Avatar_wa2ato.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Sahil Singh",
+    "city": "Ranchi",
+    "state": "Jharkhand",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890950/Artboard_7_upgkrr.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Sahil Soni",
+    "city": "",
+    "state": "",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_3_eflepj.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Shivam Kumar",
+    "city": "",
+    "state": "",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_8_hoyfxo.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Shreya Tiwari",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471117/Avatar2_Female_ydzckw.png",
+    "linkedIn": ""
+    ,
+    "Male":"false"
+  },
+  {
+    "name": "Shubham Kumar Saurav",
+    "city": "",
+    "state": "",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737471130/Avatar3_Male_dvztet.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Tushar Dengle",
+    "city": "Nanded",
+    "state": "Maharashtra",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737445586/Avatar_i4xb7l.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Shristi",
+    "city": "Faridabad",
+    "state": "Haryana",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_4_ykrsye.png",
+    "linkedIn": ""
+    ,
+    "Male":"false"
+  },
+  {
+    "name": "Vivek",
+    "city": "Jafrabad",
+    "state": "Uttar Pradesh",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737442156/Purple_Pink_Gradient_Man_3D_Avatar_wa2ato.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Vivek Sahu",
+    "city": "",
+    "state": "",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890950/Artboard_7_upgkrr.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Yash Sahu",
+    "city": "",
+    "state": "",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_3_eflepj.png",
+    "linkedIn": ""
+    ,
+    "Male":"true"
+  },
+  {
+    "name": "Dharani Hosur",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "photo": "https://res.cloudinary.com/dkxongd5z/image/upload/v1737890949/Artboard_8_hoyfxo.png",
+    "linkedIn": ""
+    ,
+    "Male":"false"
+  }
+]
