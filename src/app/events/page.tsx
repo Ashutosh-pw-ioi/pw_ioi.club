@@ -337,10 +337,10 @@ const EventsComponent = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Hero Section */}
-      <section className="relative py-15 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-cream-warm/30 to-cream-base/40"></div>
+      <section className="py-15">
+        <div className="max-w-7xl mx-auto px-4 text-center space-y-8"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="space-y-6">
+          <div>
             <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-6xl text-primary leading-tight">
               Campus Events at{' '}
               <span className="text-secondary">PWIOI</span>
