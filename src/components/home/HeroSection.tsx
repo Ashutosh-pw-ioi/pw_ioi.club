@@ -1,6 +1,7 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const HeroSection = () => {
   return (
@@ -48,12 +49,16 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center pt-4">
+              <Link href="/campus-life">
+              
               <Button
                 size="lg"
                 className="w-full sm:w-auto bg-accent hover:bg-accent-dark text-accent-foreground font-semibold px-8 sm:px-10 py-4 text-lg sm:text-xl transition-all duration-300 hover:scale-105 shadow-lg cursor-pointer"
+                
               >
                 Explore Campus
               </Button>
+              </Link>
             </div>
           </div>
         </div>

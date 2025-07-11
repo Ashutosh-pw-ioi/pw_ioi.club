@@ -29,7 +29,7 @@ const InternshipAndPlacements = () => {
     {
       id: 2,
       name: 'Raj Aggrawal',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b332c3cb?w=300&h=400&fit=crop&crop=face',
+      image: 'https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=300&h=400&fit=crop&crop=face',
       company: 'GEMSCAP Global Analyst Pvt Ltd',
       role: 'Equity Analyst & System Trader',
       joiningMonth: 'TBD',
@@ -192,7 +192,7 @@ const InternshipAndPlacements = () => {
     {
       id: 22,
       name: 'Aryan Chauhan',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=face',
+      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/120A7487%20-%20Aryan%20Chauhan.JPG?updatedAt=1752223724970',
       company: 'Physics Wallah IOI',
       role: 'Frontend Developer',
       joiningMonth: 'TBD',
@@ -321,7 +321,7 @@ const InternshipAndPlacements = () => {
 
         .animate-marquee {
           display: inline-block;
-          animation: marquee 10s linear infinite;
+          animation: marquee 120s linear infinite;
         }
 
         .animate-marquee:hover {

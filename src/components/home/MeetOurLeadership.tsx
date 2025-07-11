@@ -23,12 +23,12 @@ const leadership = [
     linkedin: 'https://www.linkedin.com/in/janishar-ali/',
   },
   {
-    name: 'Prakash Nimbalkar',
+    name: 'Dr. Sapna Nibsaiya ',
     role: 'Head, School of Management',
     description:
       'Marketing Consultant, GTM & Startup Advisor, Mentor @ MeitY, NASSCOM, and Visiting Faculty.',
-    image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/nimbalkar-min.JPG?updatedAt=1749631912481',
-    linkedin: 'https://www.linkedin.com/in/prakash-nimbalkar/',
+    image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/sapna-min.JPG?updatedAt=1749837456863',
+    linkedin: 'https://www.linkedin.com/in/sapnanibsaiya/',
   },
   {
     name: 'Dr Satishpuri Gosavi',
