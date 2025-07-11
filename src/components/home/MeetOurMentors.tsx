@@ -8,19 +8,12 @@ const MeetOurMentors = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const mentors = [
-    {
-      id: 1,
-      name: 'Gopal Sharma',
-      role: 'Business Thinking',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face',
-      company: 'Microsoft',
-      companyLogo: '🏢'
-    },
+    
     {
       id: 2,
       name: 'Saurabh Moharikar',
       role: 'AI/ML',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b332c3cb?w=400&h=500&fit=crop&crop=face',
+      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/saurabh-min.JPG?updatedAt=1749837457042',
       company: 'Red Hat',
       companyLogo: '🎩'
     },
@@ -28,7 +21,7 @@ const MeetOurMentors = () => {
       id: 3,
       name: 'Shubham Gautam',
       role: 'Operating System',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop&crop=face',
+      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/shubham-min.JPG?updatedAt=1749837456962',
       company: 'Navi',
       companyLogo: '🚀'
     },
@@ -36,7 +29,7 @@ const MeetOurMentors = () => {
       id: 4,
       name: 'Kinjal Sengupta',
       role: 'Career Excellence',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop&crop=face',
+      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/kinjal-min.JPG?updatedAt=1749837456280',
       company: 'J.P.Morgan',
       companyLogo: '🏦'
     },
@@ -44,7 +37,7 @@ const MeetOurMentors = () => {
       id: 5,
       name: 'Syed Zabi Ulla',
       role: 'Java/C++',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop&crop=face',
+      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Syed%20Zabi%20-%20Syed%20Zabi%20Ulla%20(1)-min.JPG?updatedAt=1749837457137',
       company: 'Decentro',
       companyLogo: '💼'
     },
@@ -52,7 +45,7 @@ const MeetOurMentors = () => {
       id: 6,
       name: 'Nitin M',
       role: 'Web Development',
-      image: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=400&h=500&fit=crop&crop=face',
+      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/nitin-min.JPG?updatedAt=1749837457049',
       company: 'Google',
       companyLogo: '🔍'
     },
@@ -60,7 +53,7 @@ const MeetOurMentors = () => {
       id: 7,
       name: 'Anisha Koshy',
       role: 'English',
-      image: 'https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=400&h=500&fit=crop&crop=face',
+      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/anisha-min.JPG?updatedAt=1749837456915',
       company: 'Amazon',
       companyLogo: '📦'
     },
@@ -68,7 +61,7 @@ const MeetOurMentors = () => {
       id: 8,
       name: 'Satya Sai Neerukonda',
       role: 'DSA',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face',
+      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/satyasai-min.JPG?updatedAt=1749836127534',
       company: 'Google',
       companyLogo: '🔍'
     },
@@ -76,7 +69,7 @@ const MeetOurMentors = () => {
       id: 10,
       name: 'Kaibalya Biswal',
       role: 'Python',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop&crop=face',
+      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/KB-min.JPG?updatedAt=1749837638557',
       company: 'Google',
       companyLogo: '🔍'
     },

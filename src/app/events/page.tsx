@@ -335,7 +335,7 @@ const EventsComponent = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-cream-base to-cream-warm">
+    <div className="min-h-screen bg-gray-100">
       {/* Hero Section */}
       <section className="relative py-16 lg:py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-cream-warm/30 to-cream-base/40"></div>
