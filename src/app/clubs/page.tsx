@@ -93,7 +93,7 @@ const ClubPage = () => {
         'CP Mentorship Program',
         'Tech Industry Meetup'
       ],
-      activityImages:['https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Coding_Contest-min.png?updatedAt=1752137532524','https://ik.imagekit.io/s0kb1s3cx3/PWIOI/DSC02575%20(1).JPG?updatedAt=1752137410877']
+      activityImages:['https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Coding_Contest%20(1)-min.png?updatedAt=1752248877144','https://ik.imagekit.io/s0kb1s3cx3/PWIOI/DSC02575%20(1).JPG?updatedAt=1752137410877']
     },
     social: {
       id: 'social',

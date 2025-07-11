@@ -22,7 +22,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div className="space-y-6">
             <h3 className="font-poppins font-bold text-xl mb-6">Quick Links</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               <li>
                 <Link href="/academics" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Academics
@@ -52,7 +52,7 @@ const Footer = () => {
           {/* Policies */}
           <div className="space-y-6">
             <h3 className="font-poppins font-bold text-xl mb-6">Policies</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               <li>
                 <Link href="https://drive.google.com/file/d/1GJRLD1LiBNI0-kN9IHBKNRToOCdYjtNw/view?usp=sharing" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Code of Conduct
@@ -79,7 +79,7 @@ const Footer = () => {
           {/* Other Policies */}
           <div className="space-y-6">
             <h3 className="font-poppins font-bold text-xl mb-6">Other Policies</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               <li>
                 <Link href="https://drive.google.com/file/d/1TN_2XOzlgvgFMcewR_LnYdMRfuY0KGOv/view?usp=sharing" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Library Policy
@@ -116,7 +116,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="space-y-6">
             <h3 className="font-poppins font-bold text-xl mb-6">Contact</h3>
-            <div className="space-y-2">
+            <div className="space-y-3">
               <p className="font-open-sans text-white/80">
                 PWIOI Campus, Bengaluru
               </p>
@@ -127,7 +127,7 @@ const Footer = () => {
               </p>
               <div className="flex items-center space-x-2 ">
                 <span className='inline-block h-5 w-8'><Mail className="text-white/80 " /></span>
-                <span className="font-open-sans text-white/80">studentsuccess@pwioi.com</span>
+                <a href="mailto:studentsuccess@pwioi.com" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">studentsuccess@pwioi.com</a>
               </div>
             </div>
           </div>

@@ -27,7 +27,7 @@ const CampusLifePage = () => {
     { icon: Dumbbell, title: 'Modern Gym', description: 'State-of-the-art equipment and fitness programs' },
     { icon: Gamepad2, title: 'Indoor Sports', description: 'badminton, table tennis, pool , and more' },
     { icon: Music, title: 'Outdoor Grounds', description: 'Football, cricket, Badminton, and more' }
-    
+
   ];
 
   const infrastructureHighlights = [
@@ -95,26 +95,30 @@ const CampusLifePage = () => {
             </p>
           </div>
           
-            <div className="flex justify-center mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {sportsFeatures.map((feature, index) => {
-              const IconComponent = feature.icon;
-              return (
-                <div key={index} className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center">
-                <div className="bg-blue-100 to-teal-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                  <IconComponent size={32} className="text-primary" />
-                </div>
-                <h4 className="font-poppins font-semibold text-lg text-primary mb-2">
-                  {feature.title}
-                </h4>
-                <p className="font-open-sans text-primary/70 text-sm">
-                  {feature.description}
-                </p>
-                </div>
-              );
-              })}
-            </div>
-            </div>
+ <div className="flex justify-center mb-12">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-4xl">
+    {sportsFeatures.map((feature, index) => {
+      const IconComponent = feature.icon;
+      return (
+        <div
+          key={index}
+          className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center"
+        >
+          <div className="bg-blue-100 to-teal-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+            <IconComponent size={32} className="text-primary" />
+          </div>
+          <h4 className="font-poppins font-semibold text-lg text-primary mb-2">
+            {feature.title}
+          </h4>
+          <p className="font-open-sans text-primary/70 text-sm">
+            {feature.description}
+          </p>
+        </div>
+      );
+    })}
+  </div>
+</div>
+
         </div>
       </section>
 
