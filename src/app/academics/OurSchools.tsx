@@ -1,7 +1,8 @@
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { 
-  Code, PieChart, Stethoscope, PlayCircle, ChevronRight, MapPin, X, LucideIcon
+  Code, PieChart, Stethoscope, PlayCircle, ChevronRight, MapPin, X
 } from 'lucide-react';
 
 type SchoolKey = 'technology' | 'management' | 'healthcare';
@@ -12,7 +13,7 @@ interface CampusData {
 
 interface SchoolData {
   title: string;
-  icon: LucideIcon;
+  icon: React.ComponentType<{ size?: number; className?: string }>;
   description: string;
   departments: string[];
   recruiters: string[];
@@ -151,7 +152,7 @@ const OurSchools = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div className="space-y-8">
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-xl bg-amber-200">
+                <div className="p-3 rounded-xl bg-accent">
                   {React.createElement(schools[activeSchool].icon, { 
                     size: 32, 
                     className: "text-blue-900" 
@@ -192,26 +193,31 @@ const OurSchools = () => {
             </div>
 
             <div className="space-y-6">
-              {/* Video Thumbnail Section */}
+              {/* Video Section with Iframe */}
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                 {schools[activeSchool].videoId ? (
-                  <div 
-                    className="aspect-video relative cursor-pointer group"
-                    onClick={openVideoModal}
-                  >
-                    {/* Next.js Image component would be better, but using img for now */}
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={`https://img.youtube.com/vi/${schools[activeSchool].videoId}/maxresdefault.jpg`}
-                      alt={schools[activeSchool].videoTitle}
-                      className="w-full h-full object-cover rounded-t-2xl"
+                  <div className="aspect-video relative">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={`https://www.youtube.com/embed/${schools[activeSchool].videoId}?rel=0&modestbranding=1&controls=1&showinfo=0`}
+                      title={schools[activeSchool].videoTitle}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                      className="rounded-t-2xl"
                     />
-                    {/* Play button overlay */}
-                    <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center group-hover:bg-opacity-40 transition-all duration-300">
-                      <div className="bg-white bg-opacity-90 rounded-full p-4 group-hover:scale-110 transition-transform duration-300">
-                        <PlayCircle size={48} className="text-red-600" />
-                      </div>
-                    </div>
+                    {/* Optional: Add a subtle fullscreen button overlay */}
+                    <button
+                      onClick={openVideoModal}
+                      className="absolute top-4 right-4 bg-black bg-opacity-50 hover:bg-opacity-70 text-white p-2 rounded-lg transition-all duration-200 opacity-80 hover:opacity-100"
+                      title="Open in fullscreen"
+                    >
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3m8 0h3a2 2 0 0 0 2-2v-3"/>
+                      </svg>
+                    </button>
                   </div>
                 ) : (
                   <div className="aspect-video bg-gradient-to-br from-blue-200 to-indigo-200 rounded-t-2xl flex items-center justify-center">
@@ -232,13 +238,13 @@ const OurSchools = () => {
         </div>
       </section>
 
-      {/* Video Modal */}
+      {/* Video Modal - For fullscreen viewing */}
       {isVideoModalOpen && (
         <div 
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+          className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4"
           onClick={handleModalClick}
         >
-          <div className="relative bg-white rounded-2xl overflow-hidden max-w-4xl w-full max-h-[90vh]">
+          <div className="relative bg-black rounded-2xl overflow-hidden max-w-6xl w-full max-h-[90vh]">
             {/* Close button */}
             <button
               onClick={closeVideoModal}
@@ -252,20 +258,13 @@ const OurSchools = () => {
               <iframe
                 width="100%"
                 height="100%"
-                src={`https://www.youtube.com/embed/${schools[activeSchool].videoId}?autoplay=1`}
+                src={`https://www.youtube.com/embed/${schools[activeSchool].videoId}?autoplay=1&rel=0&modestbranding=1&controls=1&showinfo=0`}
                 title={schools[activeSchool].videoTitle}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               />
-            </div>
-            
-            {/* Video title */}
-            <div className="p-4">
-              <h4 className="font-semibold text-lg text-blue-900">
-                {schools[activeSchool].videoTitle}
-              </h4>
             </div>
           </div>
         </div>
