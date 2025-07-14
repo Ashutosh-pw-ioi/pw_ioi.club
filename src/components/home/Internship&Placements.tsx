@@ -280,15 +280,13 @@ const InternshipAndPlacements = () => {
 
   return (
     <section className="py-12 sm:py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 sm:mb-16">
-          <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl text-primary mb-4">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-12">
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4 font-poppins">
             Internships & Placements
           </h2>
-          <p className="text-base sm:text-lg text-secondary max-w-3xl mx-auto px-4">
-            We are dedicated to providing our students with exceptional
-            internship and placement opportunities, ensuring they gain
-            real-world experience and are well-prepared for their careers.
+          <p className="text-lg text-secondary font-open-sans">
+           Empowering students with top career opportunities.
           </p>
         </div>
 

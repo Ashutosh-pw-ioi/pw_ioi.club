@@ -1,14 +1,12 @@
 import React from 'react';
 import { 
-  Utensils, 
   Star,
-  PlayCircle
 } from 'lucide-react';
 
 const DiningMessSection = () => {
   return (
     <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-1 space-y-6">
             <h2 className="font-poppins font-bold text-3xl text-primary">

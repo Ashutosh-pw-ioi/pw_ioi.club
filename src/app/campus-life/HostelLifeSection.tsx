@@ -1,11 +1,11 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 import { 
   Wifi,
   Car,
   Shield,
-  Coffee,
-  Star
+  Coffee
 } from 'lucide-react';
 
 const HostelLifeSection = () => {
@@ -18,7 +18,7 @@ const HostelLifeSection = () => {
 
   return (
     <section className="py-20 bg-gradient-to-br from-blue-50 to-blue-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-12">
         <div className="text-center mb-16">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-primary mb-4">
             Hostel Life - Your Home Away From Home
@@ -51,7 +51,8 @@ const HostelLifeSection = () => {
           <div className="order-1 lg:order-2">
             <div className="space-y-6">
               <div className="aspect-video bg-gradient-to-br from-blue-200 to-indigo-200 rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
-                <img
+                <Image
+                  fill
                   src="https://ik.imagekit.io/s0kb1s3cx3/PWIOI/yello.webp?updatedAt=1752226594635"
                   alt="PWIOI Hostel Life"
                   className="w-full h-full object-cover rounded-2xl"

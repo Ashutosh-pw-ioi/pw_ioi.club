@@ -30,12 +30,12 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full h-full flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8">
+      <div className="relative z-10 w-full h-full flex items-center justify-center px-5 sm:px-6 lg:px-8 py-8">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="space-y-6 sm:space-y-8 animate-fade-in">
+          <div className="space-y-8 sm:space-y-8 animate-fade-in">
             {/* Main heading */}
-            <div className="space-y-4 sm:space-y-6">
-              <h1 className="font-poppins font-bold text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-tight sm:leading-[1.1]">
+            <div className="space-y-6 sm:space-y-6">
+              <h1 className="font-poppins font-bold text-4xl xs:text-5xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-tight sm:leading-[1.1]">
                 Empowering Innovation & Leadership at{' '}
                 <span className="text-secondary">PWIOI</span>
               </h1>
@@ -48,16 +48,14 @@ const HeroSection = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center pt-4">
+            <div className="flex flex-col sm:flex-row gap-6 sm:gap-6 justify-center items-center pt-6">
               <Link href="/campus-life">
-              
-              <Button
-                size="lg"
-                className="w-full sm:w-auto bg-accent hover:bg-accent-dark text-accent-foreground font-semibold px-8 sm:px-10 py-4 text-lg sm:text-xl transition-all duration-300 hover:scale-105 shadow-lg cursor-pointer"
-                
-              >
-                Explore Campus
-              </Button>
+                <Button
+                  size="lg"
+                  className="w-full sm:w-auto bg-accent hover:bg-accent-dark text-accent-foreground font-semibold px-5 sm:px-10 py-5 sm:py-4 text-xl sm:text-xl transition-all duration-300 hover:scale-105 shadow-lg cursor-pointer"
+                >
+                  Explore Campus
+                </Button>
               </Link>
             </div>
           </div>

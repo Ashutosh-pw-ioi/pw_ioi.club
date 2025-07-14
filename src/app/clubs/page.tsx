@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { Users, Trophy, Heart, Code, Palette, Calendar, LucideIcon } from 'lucide-react';
+import { Users, Trophy, Heart, Code, Palette, Calendar, LucideIcon, ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import ClubDetail from '@/app/clubs/ClubDetail'; // Adjust import path as needed
 
@@ -39,6 +39,7 @@ interface ClubData {
 
 const ClubPage = () => {
   const [selectedClub, setSelectedClub] = useState<ClubKey | null>(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   // Function to handle club selection with scroll to top
   const handleClubSelection = (clubKey: ClubKey) => {
@@ -160,8 +161,8 @@ const ClubPage = () => {
       ],
       recentEvents: [
         'Under 25 Summit',
-        'SOT 24 & SOM 24 Freshers Party - VIBESTA’25',
-        'SOM’23 Freshers Party',
+        'SOT 24 & SOM 24 Freshers Party - VIBESTA\'25',
+        'SOM\'23 Freshers Party',
         'DJ Night in Hostel'
       ]
     },
@@ -232,32 +233,125 @@ const ClubPage = () => {
     }
   };
 
+  const clubsArray = Object.entries(clubsData) as [ClubKey, ClubData][];
+
+  // Carousel navigation functions
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % clubsArray.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + clubsArray.length) % clubsArray.length);
+  };
+
   // If a club is selected, show the detail view
   if (selectedClub) {
     const club = clubsData[selectedClub];
     return <ClubDetail club={club} onBack={handleBackToClubs} />;
   }
 
+  // Club Card Component
+  const ClubCard = ({ clubKey, club }: { clubKey: ClubKey; club: ClubData }) => {
+    const IconComponent = club.icon;
+    return (
+      <div
+        onClick={() => handleClubSelection(clubKey)}
+        className="group cursor-pointer transform transition-all duration-300 hover:scale-105 w-full"
+      >
+        <div className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-cream-warm/30 h-[480px] flex flex-col">
+          {/* Card Header - Fixed Height */}
+          <div className="relative h-40 overflow-hidden rounded-t-2xl flex-shrink-0">
+            <Image
+              src={club.image}
+              alt={`${club.name} Banner`}
+              className="object-cover"
+              fill
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+                if (target.nextSibling) {
+                  (target.nextSibling as HTMLElement).style.display = 'flex';
+                }
+              }}
+            />
+            <div className="absolute inset-0 bg-black/10 hidden items-center justify-center bg-gradient-to-br from-cream-base/80 to-cream-warm/60">
+              <IconComponent size={48} className="text-primary/60" />
+            </div>
+          </div>
+
+          {/* Card Content - Flexible Height */}
+          <div className="p-8 flex-1 flex flex-col">
+            <div className="flex items-center gap-4 mb-4">
+              {club.logo ? (
+                <Image 
+                  src={club.logo} 
+                  alt={`${club.name} Logo`}
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 object-contain rounded-lg"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    if (target.nextSibling) {
+                      (target.nextSibling as HTMLElement).style.display = 'block';
+                    }
+                  }}
+                />
+              ) : null}
+              <IconComponent 
+                size={32} 
+                className={`text-primary ${club.logo ? 'hidden' : 'block'}`} 
+              />
+              <h3 className="font-poppins font-bold text-xl text-primary transition-colors leading-tight">
+                {club.name}
+              </h3>
+            </div>
+            
+            {/* Description - Fixed Height with Ellipsis */}
+            <p className="font-open-sans text-primary/80 mb-6 leading-relaxed flex-1 overflow-hidden">
+              <span className="line-clamp-3">
+                {club.description}
+              </span>
+            </p>
+
+            {/* Quick Info - Fixed Height */}
+            <div className="space-y-3 mb-6">
+              <div className="flex items-center gap-3 text-sm text-primary/60">
+                <Calendar size={18} className="text-accent" />
+                <span className="font-open-sans">Regular Events & Activities</span>
+              </div>
+            </div>
+
+            {/* Action Button - Fixed Position */}
+            <button className="w-full bg-accent hover:bg-accent-dark text-primary font-poppins font-medium py-3 px-6 rounded-xl transition-all duration-300 hover:scale-105 shadow-md mt-auto">
+              Explore Club Details
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   // Otherwise, show the clubs overview
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Hero Section */}
-      <section className="relative py-16 lg:py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-cream-warm/30 to-cream-base/40"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-8 sm:py-12 overflow-hidden">
+       
+        <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-12 text-center">
           <div className="space-y-6 animate-fade-in">
-            <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-6xl text-primary leading-tight">
+            <h1 className="text-3xl sm:text-4xl font-bold text-primary mb-4 font-poppins leading-tight">
               Student Clubs at{' '}
               <span className="text-secondary">PWIOI</span>
             </h1>
-            <p className="font-open-sans text-lg md:text-xl text-primary/80 leading-relaxed max-w-4xl mx-auto">
+            <p className="text-lg text-secondary font-open-sans leading-relaxed max-w-4xl mx-auto">
               Discover your passion, build lifelong connections, and make a meaningful impact. 
               Join our vibrant student community and become part of something extraordinary.
             </p>
           </div>
           
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8 max-w-4xl mx-auto">
             {[
               { number: '5', label: 'Active Clubs' },
               { number: '300+', label: 'Student Members' },
@@ -275,91 +369,73 @@ const ClubPage = () => {
         </div>
       </section>
 
-      {/* Clubs Grid */}
+      {/* Clubs Section */}
       <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {(Object.entries(clubsData) as [ClubKey, ClubData][]).map(([key, club]) => {
-              const IconComponent = club.icon;
-              return (
-                <div
-                  key={key}
-                  onClick={() => handleClubSelection(key)}
-                  className="group cursor-pointer transform transition-all duration-300 hover:scale-105"
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-12">
+          {/* Desktop Grid - Hidden on mobile */}
+          <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-8">
+            {clubsArray.map(([key, club]) => (
+              <ClubCard key={key} clubKey={key} club={club} />
+            ))}
+          </div>
+
+          {/* Mobile Carousel - Visible only on mobile */}
+          <div className="md:hidden">
+            <div className="relative">
+              {/* Carousel Container */}
+              <div className="overflow-hidden rounded-2xl">
+                <div 
+                  className="flex transition-transform duration-500 ease-in-out"
+                  style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                 >
-                  <div className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-cream-warm/30 h-[480px] flex flex-col">
-                    {/* Card Header - Fixed Height */}
-                    <div className="relative h-40 overflow-hidden rounded-t-2xl flex-shrink-0">
-                      <Image
-                        src={club.image}
-                        alt={`${club.name} Banner`}
-                        className="object-cover"
-                        fill
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.style.display = 'none';
-                          if (target.nextSibling) {
-                            (target.nextSibling as HTMLElement).style.display = 'flex';
-                          }
-                        }}
-                      />
-                      <div className="absolute inset-0 bg-black/10 hidden items-center justify-center bg-gradient-to-br from-cream-base/80 to-cream-warm/60">
-                        <IconComponent size={48} className="text-primary/60" />
-                      </div>
+                  {clubsArray.map(([key, club]) => (
+                    <div key={key} className="w-full flex-shrink-0 px-2">
+                      <ClubCard clubKey={key} club={club} />
                     </div>
-
-                    {/* Card Content - Flexible Height */}
-                    <div className="p-8 flex-1 flex flex-col">
-                      <div className="flex items-center gap-4 mb-4">
-                        {club.logo ? (
-                          <Image 
-                            src={club.logo} 
-                            alt={`${club.name} Logo`}
-                            width={48}
-                            height={48}
-                            className="w-12 h-12 object-contain rounded-lg"
-                            onError={(e) => {
-                              const target = e.target as HTMLImageElement;
-                              target.style.display = 'none';
-                              if (target.nextSibling) {
-                                (target.nextSibling as HTMLElement).style.display = 'block';
-                              }
-                            }}
-                          />
-                        ) : null}
-                        <IconComponent 
-                          size={32} 
-                          className={`text-primary ${club.logo ? 'hidden' : 'block'}`} 
-                        />
-                        <h3 className="font-poppins font-bold text-xl text-primary transition-colors leading-tight">
-                          {club.name}
-                        </h3>
-                      </div>
-                      
-                      {/* Description - Fixed Height with Ellipsis */}
-                      <p className="font-open-sans text-primary/80 mb-6 leading-relaxed flex-1 overflow-hidden">
-                        <span className="line-clamp-3">
-                          {club.description}
-                        </span>
-                      </p>
-
-                      {/* Quick Info - Fixed Height */}
-                      <div className="space-y-3 mb-6">
-                        <div className="flex items-center gap-3 text-sm text-primary/60">
-                          <Calendar size={18} className="text-accent" />
-                          <span className="font-open-sans">Regular Events & Activities</span>
-                        </div>
-                      </div>
-
-                      {/* Action Button - Fixed Position */}
-                      <button className="w-full bg-accent hover:bg-accent-dark text-primary font-poppins font-medium py-3 px-6 rounded-xl transition-all duration-300 hover:scale-105 shadow-md mt-auto">
-                        Explore Club Details
-                      </button>
-                    </div>
-                  </div>
+                  ))}
                 </div>
-              );
-            })}
+              </div>
+
+              {/* Navigation Buttons */}
+              <button
+                onClick={prevSlide}
+                className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm hover:bg-white text-primary p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 border border-cream-warm/30"
+                aria-label="Previous club"
+              >
+                <ChevronLeft size={24} />
+              </button>
+              
+              <button
+                onClick={nextSlide}
+                className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm hover:bg-white text-primary p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 border border-cream-warm/30"
+                aria-label="Next club"
+              >
+                <ChevronRight size={24} />
+              </button>
+            </div>
+
+            {/* Carousel Indicators */}
+            <div className="flex justify-center gap-2 mt-6">
+              {clubsArray.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    index === currentSlide 
+                      ? 'bg-accent shadow-lg' 
+                      : 'bg-white/60 hover:bg-white/80'
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
+
+            {/* Swipe Hint */}
+            <div className="text-center mt-4">
+              <p className="text-sm text-primary/60 font-open-sans">
+                Swipe left or right to explore clubs
+              </p>
+            </div>
           </div>
         </div>
       </section>

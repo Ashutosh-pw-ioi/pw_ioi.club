@@ -9,7 +9,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className="bg-primary text-white py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* About PWIOI */}
           <div className="space-y-6">

@@ -2,7 +2,7 @@
 
 'use client';
 import React from 'react';
-import { ArrowLeft, Mail, Calendar, LucideIcon } from 'lucide-react';
+import { ArrowLeft, Mail, LucideIcon } from 'lucide-react';
 import Image from 'next/image';
 
 // Define interfaces for type safety
@@ -57,7 +57,7 @@ const ClubDetail: React.FC<ClubDetailProps> = ({ club, onBack }) => {
       {/* Header */}
       <div className={`bg-gradient-to-r ${club.color} text-white py-12 sm:py-16 lg:py-20 relative overflow-hidden`}>
         <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-12">
           <button 
             onClick={handleBackClick}
             className="flex items-center gap-2 mb-6 sm:mb-8 text-white/80 hover:text-white transition-all duration-300 hover:scale-105"
@@ -94,7 +94,7 @@ const ClubDetail: React.FC<ClubDetailProps> = ({ club, onBack }) => {
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-6 sm:space-y-8">
             {/* Club Head */}
-            <div className="bg-cream-base/50 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-lg border border-cream-warm/30">
+            <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-lg border border-cream-warm/30">
               <h2 className="font-poppins font-bold text-2xl sm:text-3xl mb-6 sm:mb-8 text-primary">Club Leadership</h2>
               <div className="bg-white/70 backdrop-blur-sm p-6 sm:p-8 rounded-xl border border-cream-warm/30">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
@@ -122,7 +122,7 @@ const ClubDetail: React.FC<ClubDetailProps> = ({ club, onBack }) => {
               <h2 className="font-poppins font-bold text-2xl sm:text-3xl mb-6 sm:mb-8 text-primary">Core Team</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 {club.coreMembers.map((member, index) => (
-                  <div key={index} className="p-4 sm:p-6 bg-gradient-to-br from-cream-base/50 to-cream-warm/30 backdrop-blur-sm rounded-xl border border-cream-warm/30 hover:shadow-lg transition-all duration-300 hover:scale-105">
+                  <div key={index} className="p-4 sm:p-6 bg-gradient-to-br from-cream-base/50 to-cream-warm/30 backdrop-blur-sm rounded-xl border border-cream-warm/30  transition-all duration-300 ">
                     <div className="flex items-start gap-3 sm:gap-4">
                       <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-accent to-secondary rounded-full flex items-center justify-center shadow-md flex-shrink-0">
                         <span className="text-xs sm:text-sm font-bold text-white">
@@ -147,7 +147,7 @@ const ClubDetail: React.FC<ClubDetailProps> = ({ club, onBack }) => {
               <h2 className="font-poppins font-bold text-2xl sm:text-3xl mb-6 sm:mb-8 text-primary">Our Activities</h2>
               <div className="space-y-3 sm:space-y-4">
                 {club.activities.map((activity, index) => (
-                  <div key={index} className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-gradient-to-r from-cream-base/40 to-cream-warm/20 backdrop-blur-sm rounded-lg border border-cream-warm/30 hover:shadow-md transition-all duration-300">
+                  <div key={index} className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-gradient-to-r from-cream-base/40 to-cream-warm/20 backdrop-blur-sm rounded-lg border border-cream-warm/30  transition-all duration-300">
                     <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${club.color} mt-2 shadow-sm flex-shrink-0`}></div>
                     <span className="font-open-sans text-sm sm:text-base text-secondary leading-relaxed">{activity}</span>
                   </div>
@@ -189,7 +189,7 @@ const ClubDetail: React.FC<ClubDetailProps> = ({ club, onBack }) => {
                       <div
                         key={index}
                         className={`relative overflow-hidden rounded-lg border border-cream-warm/30 hover:shadow-md transition-all duration-300 ${
-                          club.activityImages.length === 3 && index === 2 ? 'col-span-2' : 'aspect-square'
+                          club.activityImages?.length === 3 && index === 2 ? 'col-span-2' : 'aspect-square'
                         }`}
                       >
                         <Image

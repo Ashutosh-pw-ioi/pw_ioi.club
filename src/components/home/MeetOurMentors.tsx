@@ -155,12 +155,12 @@ const MeetOurMentors = () => {
   const isMobileView = itemsPerView === 1;
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-background text-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-12 sm:py-20 bg-background text-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-12">
         {/* Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 sm:mb-12 gap-4">
           <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 text-primary">
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4 font-poppins">
               Our Mentors
             </h2>
           </div>
@@ -237,7 +237,7 @@ const MeetOurMentors = () => {
                 className={`h-2 rounded-full transition-all duration-300 touch-manipulation ${
                   index === currentIndex 
                     ? 'bg-white w-6 sm:w-8' 
-                    : 'bg-gray-600 w-2'
+                    : 'bg-primary w-2'
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
