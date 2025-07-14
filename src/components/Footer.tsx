@@ -9,7 +9,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className="bg-primary text-white py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* About PWIOI */}
           <div className="space-y-6">
@@ -24,27 +24,27 @@ const Footer = () => {
             <h3 className="font-poppins font-bold text-xl mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/academics" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">
+                <Link href="/academics" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Academics
                 </Link>
               </li>
               <li>
-                <Link href="/campus-life" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">
+                <Link href="/campus-life" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Campus Life
                 </Link>
               </li>
               <li>
-                <Link href="/clubs" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">
+                <Link href="/clubs" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Clubs
                 </Link>
               </li>
               <li>
-                <Link href="/gallery" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">
+                <Link href="/gallery" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Gallery
                 </Link>
               </li>
               <li>
-                <Link href="/holidays" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">Holidays</Link>
+                <Link href="/holidays" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">Holidays</Link>
               </li>
             </ul>
           </div>
@@ -54,22 +54,22 @@ const Footer = () => {
             <h3 className="font-poppins font-bold text-xl mb-6">Policies</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="https://drive.google.com/file/d/1GJRLD1LiBNI0-kN9IHBKNRToOCdYjtNw/view?usp=sharing" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">
+                <Link href="https://drive.google.com/file/d/1GJRLD1LiBNI0-kN9IHBKNRToOCdYjtNw/view?usp=sharing" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Code of Conduct
                 </Link>
               </li>
               <li>
-                <Link href="https://drive.google.com/file/d/1lv3-vPzostvvHCLLhooXRIl4pd5lEXfw/view?usp=sharing" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">
+                <Link href="https://drive.google.com/file/d/1lv3-vPzostvvHCLLhooXRIl4pd5lEXfw/view?usp=sharing" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Attendance Policy
                 </Link>
               </li>
               <li>
-                <Link href="https://drive.google.com/file/d/1yZnQDkKua2D1oWQBtHU_xRq8auXrKtGu/view?usp=sharing" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">
+                <Link href="https://drive.google.com/file/d/1yZnQDkKua2D1oWQBtHU_xRq8auXrKtGu/view?usp=sharing" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Scholarship Policy
                 </Link>
               </li>
               <li>
-                <Link href="https://drive.google.com/file/d/1wxkUKD_MFo22ZPpxEDy8CgKdTuHN16wP/view?usp=sharing" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">
+                <Link href="https://drive.google.com/file/d/1wxkUKD_MFo22ZPpxEDy8CgKdTuHN16wP/view?usp=sharing" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Examination Policy
                 </Link>
               </li>
@@ -81,32 +81,32 @@ const Footer = () => {
             <h3 className="font-poppins font-bold text-xl mb-6">Other Policies</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="https://drive.google.com/file/d/1TN_2XOzlgvgFMcewR_LnYdMRfuY0KGOv/view?usp=sharing" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">
+                <Link href="https://drive.google.com/file/d/1TN_2XOzlgvgFMcewR_LnYdMRfuY0KGOv/view?usp=sharing" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Library Policy
                 </Link>
               </li>
               <li>
-                <Link href="https://drive.google.com/file/d/14XRHr6I1h8oHipR9tbdXJdahoN21Almb/view?usp=sharing" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">
+                <Link href="https://drive.google.com/file/d/14XRHr6I1h8oHipR9tbdXJdahoN21Almb/view?usp=sharing" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Klib Rules
                 </Link>
               </li>
               <li>
-                <Link href="https://drive.google.com/file/d/1rwl0LJtZlq9W_LsKuJ6tmKDbA8YyiHle/view?usp=sharing" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">
+                <Link href="https://drive.google.com/file/d/1rwl0LJtZlq9W_LsKuJ6tmKDbA8YyiHle/view?usp=sharing" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Sexual Harassment Policy
                 </Link>
               </li>
               <li>
-                <Link href="https://drive.google.com/file/d/1K8Z4nVVk6_Py8ja_uC3gmYEtNP9owuYM/view?usp=sharing" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">
+                <Link href="https://drive.google.com/file/d/1K8Z4nVVk6_Py8ja_uC3gmYEtNP9owuYM/view?usp=sharing" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Anti-Ragging Policy
                 </Link>
               </li>
               <li>
-                <Link href="https://drive.google.com/file/d/1dSdkRn0HPCpyjITGtBvvrYjrNe1icvEj/view?usp=sharing" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">
+                <Link href="https://drive.google.com/file/d/1dSdkRn0HPCpyjITGtBvvrYjrNe1icvEj/view?usp=sharing" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Social Media Policy
                 </Link>
               </li>
               <li>
-                <Link href="https://drive.google.com/file/d/1mf76AtfWKcxtYJJIjedBTXR5XHreT49L/view?usp=sharing" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">
+                <Link href="https://drive.google.com/file/d/1mf76AtfWKcxtYJJIjedBTXR5XHreT49L/view?usp=sharing" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Career Services Policy
                 </Link>
               </li>
@@ -127,7 +127,7 @@ const Footer = () => {
               </p>
               <div className="flex items-center space-x-2 ">
                 <span className='inline-block h-5 w-8'><Mail className="text-white/80 " /></span>
-                <span className="font-open-sans text-white/80">studentsuccess@pwioi.com</span>
+                <a href="mailto:studentsuccess@pwioi.com" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">studentsuccess@pwioi.com</a>
               </div>
             </div>
           </div>

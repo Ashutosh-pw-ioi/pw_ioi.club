@@ -22,16 +22,16 @@ const InternshipAndPlacements = () => {
       name: 'Rishabh Jain',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=face',
       company: 'Growth School',
-      role: 'TBD',
+      role: 'Corporate Outreach Associate',
       joiningMonth: 'TBD',
       joiningYear: 2024,
     },
     {
       id: 2,
       name: 'Raj Aggrawal',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b332c3cb?w=300&h=400&fit=crop&crop=face',
+      image: 'https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=300&h=400&fit=crop&crop=face',
       company: 'GEMSCAP Global Analyst Pvt Ltd',
-      role: 'TBD',
+      role: 'Equity Analyst & System Trader',
       joiningMonth: 'TBD',
       joiningYear: 2024,
     },
@@ -89,48 +89,40 @@ const InternshipAndPlacements = () => {
       joiningMonth: 'TBD',
       joiningYear: 2024,
     },
-    {
-      id: 10,
-      name: 'Rijurjatra Mondal',
-      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=400&fit=crop&crop=face',
-      company: 'Ampifi Solar',
-      role: 'TBD',
-      joiningMonth: 'TBD',
-      joiningYear: 2024,
-    },
+   
     {
       id: 11,
       name: 'Saket Kumar',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=400&fit=crop&crop=face',
       company: 'Physics Wallah IOI',
-      role: 'TBD',
+      role: 'Marketing & Strategy',
       joiningMonth: 'TBD',
       joiningYear: 2024,
     },
     {
       id: 12,
       name: 'Ankit Raj',
-      image: 'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?w=300&h=400&fit=crop&crop=face',
-      company: 'Physics Wallah',
-      role: 'Frontend Intern',
+      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/WhatsApp%20Image%202025-07-11%20at%2013.26.49.jpeg?updatedAt=1752220631236',
+      company: 'Physics Wallah IOI',
+      role: 'Frontend Developer',
       joiningMonth: 'TBD',
       joiningYear: 2024,
     },
     {
       id: 13,
       name: 'Nishchay Bhatia',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=face',
+      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/20250626_224106_0000%20-%20Nishchay%20Bhatia.png?updatedAt=1752220016989',
       company: 'Physics Wallah Central Office',
-      role: 'TBD',
+      role: 'Frontend Developer',
       joiningMonth: 'TBD',
       joiningYear: 2024,
     },
     {
       id: 14,
-      name: 'Arman Raj Gupta',
+      name: 'Aman Raj Gupta',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=400&fit=crop&crop=face',
       company: 'Physics Wallah Central Office',
-      role: 'TBD',
+      role: 'Backend Developer',
       joiningMonth: 'TBD',
       joiningYear: 2024,
     },
@@ -139,7 +131,7 @@ const InternshipAndPlacements = () => {
       name: 'Niharika Singh',
       image: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=300&h=400&fit=crop&crop=face',
       company: 'Physics Wallah IOI',
-      role: 'TBD',
+      role: 'Marketing Media',
       joiningMonth: 'TBD',
       joiningYear: 2024,
     },
@@ -148,7 +140,7 @@ const InternshipAndPlacements = () => {
       name: 'Harsh Tiwari',
       image: 'https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=300&h=400&fit=crop&crop=face',
       company: 'Physics Wallah IOI',
-      role: 'TBD',
+      role: 'Brand strategist',
       joiningMonth: 'TBD',
       joiningYear: 2024,
     },
@@ -175,7 +167,7 @@ const InternshipAndPlacements = () => {
       name: 'Ganesh Agarwal',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=400&fit=crop&crop=face',
       company: 'Zidio Development',
-      role: 'TBD',
+      role: 'Web Developer',
       joiningMonth: 'TBD',
       joiningYear: 2024,
     },
@@ -184,7 +176,7 @@ const InternshipAndPlacements = () => {
       name: 'Miteshkumar Agrawal',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=400&fit=crop&crop=face',
       company: 'Physics Wallah IOI',
-      role: 'TBD',
+      role: 'Backend Developer',
       joiningMonth: 'TBD',
       joiningYear: 2024,
     },
@@ -193,25 +185,25 @@ const InternshipAndPlacements = () => {
       name: 'Rohit Makani',
       image: 'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?w=300&h=400&fit=crop&crop=face',
       company: 'Physics Wallah IOI',
-      role: 'TBD',
+      role: 'AI Intern',
       joiningMonth: 'TBD',
       joiningYear: 2024,
     },
     {
       id: 22,
       name: 'Aryan Chauhan',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=face',
+      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/120A7487%20-%20Aryan%20Chauhan-min.JPG?updatedAt=1752248876938',
       company: 'Physics Wallah IOI',
-      role: 'Frontend Intern',
+      role: 'Frontend Developer',
       joiningMonth: 'TBD',
       joiningYear: 2024,
     },
     {
       id: 23,
       name: 'Jivan Jamdar',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=400&fit=crop&crop=face',
+      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/jivan.jpeg?updatedAt=1752220249286',
       company: 'Physics Wallah IOI',
-      role: 'TBD',
+      role: 'Product Manager',
       joiningMonth: 'TBD',
       joiningYear: 2024,
     },
@@ -220,7 +212,7 @@ const InternshipAndPlacements = () => {
       name: 'Ashutosh Tiwari',
       image: 'https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=300&h=400&fit=crop&crop=face',
       company: 'Physics Wallah IOI',
-      role: 'TBD',
+      role: 'Corporate Outreach Associate',
       joiningMonth: 'TBD',
       joiningYear: 2024,
     },
@@ -230,6 +222,15 @@ const InternshipAndPlacements = () => {
       image: 'https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=300&h=400&fit=crop&crop=face',
       company: 'Advait',
       role: 'n8n Specialist',
+      joiningMonth: 'TBD',
+      joiningYear: 2024,
+    },
+    {
+      id: 25,
+      name: 'Mohammad Shoyeb Ansari',
+      image: 'https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=300&h=400&fit=crop&crop=face',
+      company: 'Physics Wallah IOI',
+      role: 'Backend Developer',
       joiningMonth: 'TBD',
       joiningYear: 2024,
     },
@@ -279,15 +280,13 @@ const InternshipAndPlacements = () => {
 
   return (
     <section className="py-12 sm:py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 sm:mb-16">
-          <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl text-primary mb-4">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-12">
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4 font-poppins">
             Internships & Placements
           </h2>
-          <p className="text-base sm:text-lg text-secondary max-w-3xl mx-auto px-4">
-            We are dedicated to providing our students with exceptional
-            internship and placement opportunities, ensuring they gain
-            real-world experience and are well-prepared for their careers.
+          <p className="text-lg text-secondary font-open-sans">
+           Empowering students with top career opportunities.
           </p>
         </div>
 

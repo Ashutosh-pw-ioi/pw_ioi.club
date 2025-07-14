@@ -329,9 +329,10 @@ const ManagementPage: React.FC = () => {
                             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden border-3 border-accent/20 shadow-lg group-hover:border-accent transition-all duration-300 group-hover:shadow-xl">
                               <Image
                                 src={photo}
-                                fill
+                                width={96}
+                                height={96}
                                 alt={student.name}
-                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                                className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
                               />
                             </div>
                             {/* LinkedIn Icon Overlay */}

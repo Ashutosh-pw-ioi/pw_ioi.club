@@ -40,7 +40,7 @@ const Holidays: React.FC = () => {
 
   return (
     <>
-      <section className="relative min-h-screen py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="relative min-h-screen py-15 px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-cream-base to-cream-warm">
           <div className="absolute inset-0 bg-gradient-to-br from-cream-base/95 to-cream-warm/95" />
