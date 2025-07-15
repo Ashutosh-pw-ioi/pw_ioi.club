@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { 
-  Wifi,
+import {
+   Wifi,
   Car,
   Shield,
   Coffee
@@ -20,10 +20,10 @@ const HostelLifeSection = () => {
     <section className="py-20 bg-gradient-to-br from-blue-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-12">
         <div className="text-center mb-16">
-          <h2 className="font-poppins font-bold text-3xl md:text-4xl text-primary mb-4">
+          <h2 className="font-bold text-3xl md:text-4xl text-gray-900 mb-4">
             Hostel Life - Your Home Away From Home
           </h2>
-          <p className="font-open-sans text-lg text-primary/80 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Experience comfortable living with modern amenities, fostering friendships and academic excellence.
           </p>
         </div>
@@ -35,11 +35,11 @@ const HostelLifeSection = () => {
                 const IconComponent = feature.icon;
                 return (
                   <div key={index} className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
-                    <IconComponent size={32} className="text-accent mb-4" />
-                    <h4 className="font-poppins font-semibold text-lg text-primary mb-2">
+                    <IconComponent size={32} className="text-blue-600 mb-4" />
+                    <h4 className="font-semibold text-lg text-gray-900 mb-2">
                       {feature.title}
                     </h4>
-                    <p className="font-open-sans text-primary/70 text-sm">
+                    <p className="text-gray-600 text-sm">
                       {feature.description}
                     </p>
                   </div>
@@ -50,19 +50,20 @@ const HostelLifeSection = () => {
           
           <div className="order-1 lg:order-2">
             <div className="space-y-6">
-              <div className="aspect-video bg-gradient-to-br from-blue-200 to-indigo-200 rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
+              <div className="aspect-video bg-gradient-to-br from-blue-200 to-indigo-200 rounded-2xl flex items-center justify-center shadow-lg overflow-hidden relative">
                 <Image
-                  fill
                   src="https://ik.imagekit.io/s0kb1s3cx3/PWIOI/yello.webp?updatedAt=1752226594635"
                   alt="PWIOI Hostel Life"
-                  className="w-full h-full object-cover rounded-2xl"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div className="bg-white p-6 rounded-xl shadow-md">
-                <h4 className="font-poppins font-semibold text-lg text-primary mb-2">
+                <h4 className="font-semibold text-lg text-gray-900 mb-2">
                   Hostel Facilities Include:
                 </h4>
-                <ul className="font-open-sans text-primary/70 space-y-1 text-sm">
+                <ul className="text-gray-600 space-y-1 text-sm">
                   <li>• Twin sharing rooms with attached bathrooms</li>
                   <li>• 24/7 power backup and water supply</li>
                   <li>• Laundry facilities and housekeeping services</li>
