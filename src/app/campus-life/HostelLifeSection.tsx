@@ -50,12 +50,12 @@ const HostelLifeSection = () => {
           
           <div className="order-1 lg:order-2">
             <div className="space-y-6">
-              <div className="aspect-video bg-gradient-to-br from-blue-200 to-indigo-200 rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
+              <div className="relative aspect-video bg-gradient-to-br from-blue-200 to-indigo-200 rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
                 <Image
                   fill
                   src="https://ik.imagekit.io/s0kb1s3cx3/PWIOI/yello.webp?updatedAt=1752226594635"
                   alt="PWIOI Hostel Life"
-                  className="w-full h-full object-cover rounded-2xl"
+                  className=" rounded-2xl object-cover w-full h-full"
                 />
               </div>
               <div className="bg-white p-6 rounded-xl shadow-md">
