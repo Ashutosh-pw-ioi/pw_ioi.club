@@ -12,56 +12,56 @@ const ScholarshipPage = () => {
       id: 1,
       name: "Buddy4Study Scholarship Support Programme 2025-26",
       description: "Supports meritorious students with early access to scholarships, financial aid, and fee waivers to help them pursue higher education despite financial challenges.",
-      image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=250&fit=crop&crop=center",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/ChatGPT%20Image%20Jul%2023,%202025,%2012_53_33%20PM-min.png?updatedAt=1753259013186",
       link: "https://www.buddy4study.com/page/buddy4study-scholarship-support-programme"
     },
     {
       id: 2,
       name: "National Scholarship Scheme",
       description: "Supports bright, low-income students entering professional undergraduate courses with up to ₹30,000 per year, renewable for good performance.",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop&crop=center",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/ChatGPT%20Image%20Jul%2023,%202025,%2001_10_10%20PM-min.png?updatedAt=1753259013061",
       link: "https://scholarshipstatuscheck.com/vidyadhan-scholarship/#google_vignette"
     },
     {
       id: 3,
       name: "North South Foundation Scholarship",
       description: "Provides scholarships to academically bright students facing financial constraints.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop&crop=center",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/ChatGPT%20Image%20Jul%2023,%202025,%2001_22_58%20PM-min.png?updatedAt=1753259013051",
       link: "https://www.collegesearch.in/articles/north-south-foundation-scholarship"
     },
     {
       id: 4,
       name: "Dr APJ Abdul Kalam Ignite Awards",
       description: "Encourages students to submit creative ideas; selected students receive scholarships to help complete their education.",
-      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=250&fit=crop&crop=center",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/ChatGPT%20Image%20Jul%2023,%202025,%2001_29_29%20PM-min.png?updatedAt=1753259013228",
       link: "https://www.indiascienceandtechnology.gov.in/nurturing-minds/scholarships/school/dr-p-j-abdul-kalam-ignite-awards-nif"
     },
     {
       id: 5,
       name: "Combined Counselling Board Scholarship",
       description: "Merit-based financial aid for students pursuing higher education in CCB-affiliated colleges, covering ₹60,000–₹2,50,000 per annum.",
-      image: "https://images.unsplash.com/photo-1581092795442-8674ba2e3dab?w=400&h=250&fit=crop&crop=center",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/ChatGPT%20Image%20Jul%2023,%202025,%2001_33_33%20PM-min.png?updatedAt=1753259013312",
       link: "https://theglobalscholarship.org/internships/combined-counselling-board-scholarship-2025?source=main#google_vignette"
     },
     {
       id: 6,
       name: "HDFC Bank Educational Crisis Scholarship Support",
       description: "Offers interim support for students facing personal or economic crises to help them continue their education.",
-      image: "https://images.unsplash.com/photo-1559081842-5c3f08866c61?w=400&h=250&fit=crop&crop=center",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/ChatGPT%20Image%20Jul%2023,%202025,%2001_37_48%20PM-min.png?updatedAt=1753259013253",
       link: "https://v.hdfcbank.com/content/dam/hdfc-aem-microsites/common-pdfs/pdf/ECSS_ApplicationForm.pdf"
     },
     {
       id: 7,
       name: "College Board Indian Scholarship Program",
       description: "Awards top SAT scorers with 100% fee waivers at member universities and significant SAT fee discounts, supporting meritorious students financially.",
-      image: "https://images.unsplash.com/photo-1559081842-5c3f08866c61?w=400&h=250&fit=crop&crop=center",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/ChatGPT%20Image%20Jul%2023,%202025,%2001_41_08%20PM-min.png?updatedAt=1753259013186",
       link: "https://www.buddy4study.com/article/sat-scholarships-college-board-india-scholars-program"
     },
     {
       id: 8,
       name: "IET India Scholarship Award",
       description: "Recognizes outstanding undergraduate engineering students for creativity, innovation, academic excellence, and leadership, empowering future engineering leaders.",
-      image: "https://images.unsplash.com/photo-1559081842-5c3f08866c61?w=400&h=250&fit=crop&crop=center",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/ChatGPT%20Image%20Jul%2023,%202025,%2001_44_21%20PM-min.png?updatedAt=1753259013011",
       link: "https://www.buddy4study.com/page/iet-india-scholarship-awards"
     }
   ];
@@ -194,16 +194,16 @@ const ScholarshipPage = () => {
           {/* Carousel Navigation */}
           <button
             onClick={prevSlide}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2 z-10 hover:bg-gray-50 transition-colors"
+            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-primary shadow-lg rounded-full p-2 z-10 hover:bg-gray-50 transition-colors"
           >
-            <ChevronLeft className="w-5 h-5 text-gray-600" />
+            <ChevronLeft className="w-5 h-5 text-white" />
           </button>
           
           <button
             onClick={nextSlide}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2 z-10 hover:bg-gray-50 transition-colors"
+            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary shadow-lg rounded-full p-2 z-10 hover:bg-gray-50 transition-colors"
           >
-            <ChevronRight className="w-5 h-5 text-gray-600" />
+            <ChevronRight className="w-5 h-5 text-white" />
           </button>
 
           {/* Dots Indicator */}
@@ -225,7 +225,7 @@ const ScholarshipPage = () => {
           {scholarships.map((scholarship) => (
             <div
               key={scholarship.id}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 min-h-[520px] lg:min-h-[580px] flex flex-col"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 min-h-[480px] lg:min-h-[500px] flex flex-col"
             >
               <div className="relative h-56 lg:h-64">
                 <Image

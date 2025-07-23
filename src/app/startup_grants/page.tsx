@@ -12,32 +12,32 @@ const StartupGrantsPage = () => {
     {
       id: 1,
       name: "ICICI Knowledge Park (IKP)",
-      description: "Early-stage funding up to $50,000 for tech startups with innovative solutions. Includes 6 months of mentorship and access to our accelerator network.",
-      image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=250&fit=crop&crop=center",
+      description: "Life‑sciences incubator providing lab infrastructure, funding, mentorship in Hyderabad and Bengaluru.",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Screenshot%20from%202025-07-23%2014-01-23.png?updatedAt=1753259510248",
       features: ["Mentorship", "Network Access", "Legal Support"],
       link: "https://ikpknowledgepark.com/grant-funding/"
     },
     {
       id: 2,
       name: "Indo-U.S. Science and Technology Forum (IUSSTF)",
-      description: "Empowering women-led startups with funding up to $75,000, plus exclusive access to female founder networks and specialized business coaching.",
-      image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=400&h=250&fit=crop&crop=center",
+      description: "Bilateral autonomous body fostering India‑US research, academic and industry S&T collaborations",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Screenshot%20from%202025-07-23%2014-04-40.png?updatedAt=1753259704242",
       features: ["Coaching", "Network", "PR Support"],
       link: "https://iusstf.org/"
     },
     {
       id: 3,
       name: "NIDHI Seed Support Program",
-      description: "Supporting climate-focused startups with grants up to $100,000. Includes access to sustainability experts and green technology partnerships.",
-      image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=250&fit=crop&crop=center",
+      description: "DST startup initiative to support innovation ecosystem via funding, mentoring, acceleration.",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Screenshot%20from%202025-07-23%2014-06-46.png?updatedAt=1753259826103",
       features: ["Expert Mentors", "Partnerships", "Market Access"],
       link: "https://nidhi.dst.gov.in/"
     },
     {
       id: 4,
       name: "Microsoft Global Social Enterpreneurship",
-      description: "Fueling AI innovation with grants up to $120,000 for startups developing cutting-edge AI solutions. Includes access to computing resources and AI experts.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop&crop=center",
+      description: "Provides Azure credits, technical support, and funding to social-impact startups.",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Screenshot%20from%202025-07-23%2014-08-09.png?updatedAt=1753260042142",
       features: ["Computing Credits", "AI Mentors", "Research Access"],
       link: "https://www.microsoft.com/en-in/startups"
     },
@@ -45,7 +45,7 @@ const StartupGrantsPage = () => {
       id: 5,
       name: "Innovation Grant",
       description: "Supporting startups solving social problems with grants up to $60,000. Focused on education, healthcare, and community development solutions.",
-      image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=250&fit=crop&crop=center",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Screenshot%20from%202025-07-23%2014-08-53.png?updatedAt=1753259963391",
       features: ["Impact Metrics", "NGO Network", "Media Coverage"],
       link: "https://sites.google.com/startupmission.in/innovationgrant/home"
     },
@@ -53,31 +53,24 @@ const StartupGrantsPage = () => {
       id: 6,
       name: "Atal New India Challenge",
       description: "Empowering rural entrepreneurs with funding up to $40,000 and resources to build sustainable businesses in underserved communities.",
-      image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&h=250&fit=crop&crop=center",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Screenshot%20from%202025-07-23%2014-13-35.png?updatedAt=1753260234585",
       features: ["Local Mentors", "Market Access", "Infrastructure"],
       link: "https://aim.gov.in/atal-new-india-challenge.php"
     },
     {
       id: 7,
       name: "Aatmanirbhar Bharat ARISE",
-      description: "Empowering rural entrepreneurs with funding up to $40,000 and resources to build sustainable businesses in underserved communities.",
-      image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&h=250&fit=crop&crop=center",
+      description: "Funds applied R&D in MSMEs and startups, boosting competitiveness and innovation.",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Screenshot%20from%202025-07-23%2014-15-11.png?updatedAt=1753260466624",
       features: ["Local Mentors", "Market Access", "Infrastructure"],
       link: "https://aim.gov.in/pdf/ARISE-ANIC_Guidelines.pdf"
     },
-     {
-      id: 8,
-      name: "Atal Innovation Mission",
-      description: "Empowering rural entrepreneurs with funding up to $40,000 and resources to build sustainable businesses in underserved communities.",
-      image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&h=250&fit=crop&crop=center",
-      features: ["Local Mentors", "Market Access", "Infrastructure"],
-      link: "https://aim.gov.in/atal-new-india-challenge.php"
-    },
+  
       {
       id: 9,
       name: "Credit Guarantee Fund Trust for Micro and Small Enterprise",
-      description: "Empowering rural entrepreneurs with funding up to $40,000 and resources to build sustainable businesses in underserved communities.",
-      image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&h=250&fit=crop&crop=center",
+      description: "Offers collateral‑free loan guarantees to MSMEs through partner financial institutions.",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Screenshot%20from%202025-07-23%2014-17-18.png?updatedAt=1753260466703",
       features: ["Local Mentors", "Market Access", "Infrastructure"],
       link: "https://www.cgtmse.in/"
     },
@@ -85,40 +78,40 @@ const StartupGrantsPage = () => {
        {
       id: 10,
       name: "Prime Minister Employment Generation Programme (PMEGP)",
-      description: "Empowering rural entrepreneurs with funding up to $40,000 and resources to build sustainable businesses in underserved communities.",
-      image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&h=250&fit=crop&crop=center",
+      description: "Credit‑linked subsidy for micro‑enterprise creation, generating rural and urban employment",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Screenshot%20from%202025-07-23%2014-19-35.png?updatedAt=1753260589930",
       features: ["Local Mentors", "Market Access", "Infrastructure"],
       link: "https://msme.gov.in/1-prime-ministers-employment-generation-programme-pmegp"
     },
       {
       id: 11,
       name: "Pradhan Mantri Mudra Yojana (PMMY)",
-      description: "Empowering rural entrepreneurs with funding up to $40,000 and resources to build sustainable businesses in underserved communities.",
-      image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&h=250&fit=crop&crop=center",
+      description: "Offers small loans (Shishu/Kishor/Tarun) up to ₹10 lakh to non‑corporate, non‑farm enterprises.",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/pmmy-5%20(1).jpg?updatedAt=1753263157224",
       features: ["Local Mentors", "Market Access", "Infrastructure"],
       link: "https://www.mudraloancapital.com/?gad_source=1&gad_campaignid=22782214961&gbraid=0AAAABAkW88Nc24OigWU1uEC5vhl6OJm9U&gclid=Cj0KCQjwyvfDBhDYARIsAItzbZGS8Dkl-_vRlWJiVr8kMNGddaxxiiwuo3mmqBQ14fInGV3z5dh1PskaArQ7EALw_wcB"
     },
      {
       id: 12,
       name: "Startup India Seed Fund",
-      description: "Empowering rural entrepreneurs with funding up to $40,000 and resources to build sustainable businesses in underserved communities.",
-      image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&h=250&fit=crop&crop=center",
+      description: "Provides early‑stage grants for proof‑of‑concept, prototyping, trials, market entry",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Screenshot%20from%202025-07-23%2015-04-42.png?updatedAt=1753263360273",
       features: ["Local Mentors", "Market Access", "Infrastructure"],
       link: "https://seedfund.startupindia.gov.in/"
     },
      {
       id: 13,
       name: "Standup India Scheme",
-      description: "Empowering rural entrepreneurs with funding up to $40,000 and resources to build sustainable businesses in underserved communities.",
-      image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&h=250&fit=crop&crop=center",
+      description: "Facilitates ₹10 lakh–₹1 Cr bank loans to SC/ST or woman entrepreneurs",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Screenshot%20from%202025-07-23%2015-05-33.png?updatedAt=1753263360386",
       features: ["Local Mentors", "Market Access", "Infrastructure"],
       link: "https://www.myscheme.gov.in/schemes/sui"
     },
     {
       id: 14,
       name: "Credit Guarantee scheme for startups",
-      description: "Empowering rural entrepreneurs with funding up to $40,000 and resources to build sustainable businesses in underserved communities.",
-      image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&h=250&fit=crop&crop=center",
+      description: "Provides collateral‑free guarantees (up to ₹20 Cr) for DPIIT‑recognized startup loans.",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Screenshot%20from%202025-07-23%2015-07-23.png?updatedAt=1753263460290",
       features: ["Local Mentors", "Market Access", "Infrastructure"],
       link: "https://www.startupindia.gov.in/content/sih/en/credit-guarantee-scheme-for-startups.html"
     },
@@ -219,6 +212,9 @@ const StartupGrantsPage = () => {
                         <h3 className="text-lg font-bold text-primary mb-3 leading-tight">
                           {grant.name}
                         </h3>
+                        <p className="text-secondary text-sm mb-4">
+                          {grant.description}
+                        </p>
                        
                         
                         
@@ -253,16 +249,16 @@ const StartupGrantsPage = () => {
           {/* Carousel Navigation */}
           <button
             onClick={prevSlide}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2 z-10 hover:bg-gray-50 transition-colors"
+            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-primary shadow-lg rounded-full p-2 z-10 transition-colors"
           >
-            <ChevronLeft className="w-5 h-5 text-gray-600" />
+            <ChevronLeft className="w-5 h-5 text-white" />
           </button>
           
           <button
             onClick={nextSlide}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2 z-10 hover:bg-gray-50 transition-colors"
+            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary shadow-lg rounded-full p-2 z-10 hover:bg-gray-50 transition-colors"
           >
-            <ChevronRight className="w-5 h-5 text-gray-600" />
+            <ChevronRight className="w-5 h-5 text-white" />
           </button>
 
           {/* Dots Indicator */}
@@ -305,6 +301,9 @@ const StartupGrantsPage = () => {
                   <h3 className="text-xl font-bold text-primary mb-4 leading-tight">
                     {grant.name}
                   </h3>
+                  <p className="text-secondary text-sm mb-4">
+                    {grant.description}
+                  </p>
                  
                   
                   
