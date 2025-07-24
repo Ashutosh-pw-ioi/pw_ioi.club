@@ -21,32 +21,32 @@ const AcademicsPage = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Hero Section */}
-      <section className="py-15">
-        <div className="max-w-7xl mx-auto px-4 text-center space-y-8">
-          <h1 className="font-bold text-3xl lg:text-6xl text-primary">
+      <section className="py-8 sm:py-12">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-12 text-center">
+          <h1 className="text-3xl sm:text-4xl font-bold text-primary mb-4 font-poppins leading-tight">
             Academic Excellence at <span className="text-secondary">PWIOI</span>
           </h1>
-          <p className="text-lg max-w-4xl mx-auto text-blue-800 opacity-80">
+          <p className="text-lg max-w-4xl mx-auto text-secondary opacity-80">
             Empowering minds through innovative education, cutting-edge research, and industry-relevant curriculum.
           </p>
           
-          <div className="flex justify-center mt-16">
-            <div className="grid grid-cols-1 justify-center sm:grid-cols-2 gap-6 w-xl ">
+          
+            <div className="grid grid-cols-2 md:grid-cols-2   gap-4 sm:gap-6 mt-6 sm:mt-12 max-w-4xl mx-auto ">
               {stats.map((stat, i) => {
-                const IconComponent = stat.icon;
+                
                 return (
                   <div
                     key={i}
-                    className="p-6 bg-white/70 rounded-2xl hover:scale-105 transition-all duration-300 flex flex-col justify-center items-center text-center"
+                    className="text-center p-3 sm:p-4 bg-white/70 backdrop-blur-sm rounded-xl border border-cream-warm/30 shadow-lg"
                   >
-                    <IconComponent size={32} className={`${stat.color} mb-3`} />
-                    <div className="font-bold text-2xl mb-1 text-primary">{stat.number}</div>
-                    <div className="text-sm text-primary opacity-70">{stat.label}</div>
+                   
+                    <div className="font-poppins font-bold text-xl sm:text-2xl md:text-3xl text-secondary mb-1">{stat.number}</div>
+                    <div className="font-open-sans text-xs sm:text-sm text-primary/70">{stat.label}</div>
                   </div>
                 );
               })}
             </div>
-          </div>
+          
         </div>
       </section>
 

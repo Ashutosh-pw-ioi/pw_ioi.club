@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Menu, CircleUser, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isStudentsDropdownOpen, setIsStudentsDropdownOpen] = useState(false);
@@ -68,7 +69,7 @@ const Navbar = () => {
     setIsMenuOpen(false);
     setIsMobileStudentsOpen(false);
   };
-
+ 
   return (
     <nav className="sticky top-0 z-50 bg-background border-b-2 border-accent shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -150,13 +151,13 @@ const Navbar = () => {
 
           {/* Student Login Button */}
           <div className="hidden md:block">
-  <Link href="https://student-profile-frontend-inky.vercel.app/">
-    <Button className="bg-accent hover:bg-accent-dark text-accent-foreground font-medium transition-colors duration-200">
-      <CircleUser className="w-4 h-4 mr-2" />
-      Student Login
-    </Button>
-  </Link>
-</div>
+            <Link href="https://production.dx14u5jslysdl.amplifyapp.com/auth/login/student">
+              <Button className="bg-accent cursor-pointer hover:bg-accent-dark text-accent-foreground font-medium transition-colors duration-200">
+                <CircleUser className="w-4 h-4 mr-2" />
+                Student Login
+              </Button>
+            </Link>
+          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -221,12 +222,15 @@ const Navbar = () => {
               </div>
 
               {/* Mobile Login Button */}
-              <div className="border-t border-gray-200 pt-3">
-                <Button className="w-full bg-accent hover:bg-accent-dark text-accent-foreground font-medium py-3">
-                  <CircleUser className="w-4 h-4 mr-2" />
-                  Student Login
-                </Button>
-              </div>
+              <Link href="https://production.dx14u5jslysdl.amplifyapp.com/auth/login/student">
+                <div className="border-t border-gray-200 pt-3">
+                  <Button
+                    className="w-full bg-accent hover:bg-accent-dark text-accent-foreground font-medium py-3">
+                    <CircleUser className="w-4 h-4 mr-2" />
+                    Student Login
+                  </Button>
+                </div>
+              </Link>
             </div>
           </div>
         )}
