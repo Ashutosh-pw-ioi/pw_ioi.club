@@ -71,11 +71,12 @@ const CampusLifePage = () => {
         </div>
       </section>
       {/* Dining and Mess Section */}
-      <DiningMessSection />
+      
       {/* Diversity and Inclusion Section */}
       <DiversityInclusionSection />
       {/* Hostel Life Section */}
       <HostelLifeSection />
+      <DiningMessSection />
 
       {/* Sports Facilities Section */}
       <section className="py-16 sm:py-20 bg-gray-100">

@@ -23,21 +23,7 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="font-poppins font-bold text-xl mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              <li>
-                <Link href="/academics" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
-                  Academics
-                </Link>
-              </li>
-              <li>
-                <Link href="/campus-life" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
-                  Campus Life
-                </Link>
-              </li>
-              <li>
-                <Link href="/clubs" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
-                  Clubs
-                </Link>
-              </li>
+              
               <li>
                 <Link href="/gallery" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">
                   Gallery
@@ -45,6 +31,12 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="/holidays" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">Holidays</Link>
+              </li>
+              <li>
+                <Link href="/external_scholarship" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">External Scholarship</Link>
+              </li>
+              <li>
+                <Link href="/startup_grants" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">Startup Grants</Link>
               </li>
             </ul>
           </div>
