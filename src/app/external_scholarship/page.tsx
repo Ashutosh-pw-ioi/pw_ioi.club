@@ -112,7 +112,7 @@ const ScholarshipPage = () => {
               </div>
               <div className="flex items-center gap-2 text-sm">
                 <Users className="w-5 h-5 text-purple-500" />
-                <span>50,000+ Students Helped</span>
+                <span>Helping students financially</span>
               </div>
             </div>
           </div>

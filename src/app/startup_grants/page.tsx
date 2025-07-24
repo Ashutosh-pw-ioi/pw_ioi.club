@@ -156,15 +156,15 @@ const StartupGrantsPage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <div className="flex items-center gap-2 text-sm">
                 <CheckCircle className="w-5 h-5 text-green-500" />
-                <span>50+ Active Grants</span>
+                <span>Active Grants</span>
               </div>
               <div className="flex items-center gap-2 text-sm">
                 <Award className="w-5 h-5 text-blue-500" />
-                <span>$10M+ Distributed</span>
+                <span>Good grants</span>
               </div>
               <div className="flex items-center gap-2 text-sm">
                 <Users className="w-5 h-5 text-purple-500" />
-                <span>500+ Startups Accelerated</span>
+                <span>Acceleating multiple startups</span>
               </div>
             </div>
           </div>
