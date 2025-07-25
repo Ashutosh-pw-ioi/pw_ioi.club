@@ -217,7 +217,7 @@ export default function CampPage() {
     }
 
     try {
-      const response = await fetch(`${baseUrl}/schemaBatchCamp/certificate`, {
+      const response = await fetch(`${baseUrl}/api/schemaBatchCamp/certificate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ contactNumber: phone }),
