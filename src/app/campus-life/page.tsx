@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { 
   Users, 
   Trophy, 
@@ -28,10 +29,10 @@ const CampusLifePage = () => {
   ];
 
   const infrastructureHighlights = [
-    { title: 'Smart Classrooms', description: 'Interactive digital learning environments', image: 'classroom' },
-    { title: 'Modern Studios', description: 'Cutting-edge facilities for innovation', image: 'lab' },
-    { title: 'Library', description: 'A treasure trove of knowledge', image: 'library' },
-    { title: 'Modern Study Room', description: 'Modern study spaces for creative learning', image: 'innovation' }
+    { title: 'Smart Classrooms', description: 'Interactive digital learning environments', image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/classroom.jpeg?updatedAt=1753700923252' },
+    { title: 'Modern Studios', description: 'Cutting-edge facilities for innovation', image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/studio.jpeg?updatedAt=1753700943398' },
+    { title: 'Library', description: 'A treasure trove of knowledge', image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/liberary.jpeg?updatedAt=1753700904161' },
+    { title: 'Modern Study Room', description: 'Modern study spaces for creative learning', image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/studyroom-min.jpg?updatedAt=1753700853994' }
   ];
 
  
@@ -129,21 +130,26 @@ const CampusLifePage = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {infrastructureHighlights.map((item, index) => (
-              <div key={index} className="group cursor-pointer">
-                <div className="aspect-square bg-gradient-to-br from-purple-100 to-indigo-100 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105 mb-3 sm:mb-4">
-                  <Building size={40} className="text-blue-900 opacity-80 sm:w-12 sm:h-12" />
-                </div>
-                <h4 className="font-semibold text-base sm:text-lg text-blue-900 mb-2">
-                  {item.title}
-                </h4>
-                <p className="text-blue-700 text-sm sm:text-base">
-                  {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+  {infrastructureHighlights.map((item, index) => (
+    <div key={index} className="group cursor-pointer">
+      <div className="relative aspect-square bg-gradient-to-br from-purple-100 to-indigo-100 rounded-2xl overflow-hidden shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105 mb-3 sm:mb-4">
+        <Image
+          src={item.image}
+          alt={item.title}
+          fill
+          className="object-cover"
+        />
+      </div>
+      <h4 className="font-semibold text-base sm:text-lg text-blue-900 mb-2">
+        {item.title}
+      </h4>
+      <p className="text-blue-700 text-sm sm:text-base">
+        {item.description}
+      </p>
+    </div>
+  ))}
+</div>
         </div>
       </section>
 

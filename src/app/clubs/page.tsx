@@ -1,11 +1,11 @@
 'use client';
 import React, { useState } from 'react';
-import { Users, Trophy, Heart, Code, Palette, Calendar, LucideIcon, ChevronLeft, ChevronRight } from 'lucide-react';
+import {  Trophy, Heart, Code, Palette, Calendar, LucideIcon, ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import ClubDetail from '@/app/clubs/ClubDetail'; // Adjust import path as needed
 
 // Define club key type
-type ClubKey = 'tech' | 'social' | 'cultural' | 'creators' | 'sports';
+type ClubKey = 'tech' | 'social' | 'cultural' | 'sports';
 
 // Define interfaces for type safety
 interface ClubHead {
@@ -131,7 +131,8 @@ const ClubPage = () => {
         'Festival for All',
         'Education Drive',
         'Periods of Change'
-      ]
+      ],
+      activityImages:['https://ik.imagekit.io/s0kb1s3cx3/PWIOI/DSC02564.jpeg?updatedAt=1753698103507','https://ik.imagekit.io/s0kb1s3cx3/PWIOI/120A6696-1.jpeg?updatedAt=1753698103502']
     },
     cultural: {
       id: 'cultural',
@@ -164,41 +165,42 @@ const ClubPage = () => {
         'SOT 24 & SOM 24 Freshers Party - VIBESTA\'25',
         'SOM\'23 Freshers Party',
         'DJ Night in Hostel'
-      ]
-    },
-    creators: {
-      id: 'creators',
-      name: 'Creators Club',
-      icon: Users,
-      image: '/creators.avif',
-      bgColor: 'bg-cream-warm/20',
-      color: 'from-orange-600 to-orange-800',
-      description: 'Nurturing creative minds through digital innovation and multimedia excellence',
-      head: {
-        name: 'Taylor Brooks',
-        position: 'Club President',
-        email: 'taylor.brooks@pwioi.edu',
-        phone: '+91 65432 10987'
-      },
-      coreMembers: [
-        { name: 'Jordan Lee', position: 'Creative Director', specialty: 'Video Production & Editing' },
-        { name: 'Casey Morgan', position: 'Content Manager', specialty: 'Digital Marketing' },
-        { name: 'Alex Rivera', position: 'Design Lead', specialty: 'Graphic & UI/UX Design' },
-        { name: 'Sam Parker', position: 'Tech Support', specialty: 'Audio Engineering' }
       ],
-      activities: [
-        'Professional video production workshops',
-        'Photography masterclasses and exhibitions',
-        'Podcast creation and digital storytelling',
-        'Design thinking and creative competitions',
-        'Content creation and social media bootcamps'
-      ],
-      recentEvents: [
-        'PWIOI Student Film Festival',
-        'Creative Excellence Awards',
-        'Digital Innovation Summit'
-      ]
+      activityImages:['https://ik.imagekit.io/s0kb1s3cx3/PWIOI/120A3711-min.JPG?updatedAt=1749630544043','https://ik.imagekit.io/s0kb1s3cx3/PWIOI/120A8707-min.JPG?updatedAt=1749622041102']
     },
+    // creators: {
+    //   id: 'creators',
+    //   name: 'Creators Club',
+    //   icon: Users,
+    //   image: '/creators.avif',
+    //   bgColor: 'bg-cream-warm/20',
+    //   color: 'from-orange-600 to-orange-800',
+    //   description: 'Nurturing creative minds through digital innovation and multimedia excellence',
+    //   head: {
+    //     name: 'Taylor Brooks',
+    //     position: 'Club President',
+    //     email: 'taylor.brooks@pwioi.edu',
+    //     phone: '+91 65432 10987'
+    //   },
+    //   coreMembers: [
+    //     { name: 'Jordan Lee', position: 'Creative Director', specialty: 'Video Production & Editing' },
+    //     { name: 'Casey Morgan', position: 'Content Manager', specialty: 'Digital Marketing' },
+    //     { name: 'Alex Rivera', position: 'Design Lead', specialty: 'Graphic & UI/UX Design' },
+    //     { name: 'Sam Parker', position: 'Tech Support', specialty: 'Audio Engineering' }
+    //   ],
+    //   activities: [
+    //     'Professional video production workshops',
+    //     'Photography masterclasses and exhibitions',
+    //     'Podcast creation and digital storytelling',
+    //     'Design thinking and creative competitions',
+    //     'Content creation and social media bootcamps'
+    //   ],
+    //   recentEvents: [
+    //     'PWIOI Student Film Festival',
+    //     'Creative Excellence Awards',
+    //     'Digital Innovation Summit'
+    //   ]
+    // },
     sports: {
       id: 'sports',
       name: 'Sports Club',
@@ -229,7 +231,9 @@ const ClubPage = () => {
         'PWIOI Annual Sports Meet',
         'Inter-College Championship',
         'Fitness Challenge Series'
-      ]
+      ],
+      activityImages:['https://ik.imagekit.io/s0kb1s3cx3/PWIOI/DSC02212-min.JPG?updatedAt=1749621735849','https://ik.imagekit.io/s0kb1s3cx3/PWIOI/120A6698-min.JPG?updatedAt=1749630544169']
+
     }
   };
 

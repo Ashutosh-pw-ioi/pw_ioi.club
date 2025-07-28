@@ -28,42 +28,42 @@ const EventsComponent = () => {
 
   // Sample upcoming events for demo
   const upcomingEvents: Event[] = [
-    {
-      id: 1,
-      title: 'Tech Innovation Summit 2025',
-      date: '2025-07-15',
-      time: '09:00 AM',
-      location: 'Convention Center, Bengaluru',
-      attendees: 500,
-      category: 'conference',
-      image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=300&fit=crop',
-      description: 'Join industry leaders for cutting-edge tech discussions and networking',
-      status: 'filling-fast'
-    },
-    {
-      id: 2,
-      title: 'AI & Machine Learning Workshop',
-      date: '2025-07-08',
-      time: '02:00 PM',
-      location: 'Tech Hub, HSR Layout',
-      attendees: 50,
-      category: 'workshop',
-      image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=300&fit=crop',
-      description: 'Hands-on workshop with AI experts and practical sessions',
-      status: 'open'
-    },
-    {
-      id: 3,
-      title: 'Startup Pitch Night',
-      date: '2025-07-20',
-      time: '06:00 PM',
-      location: 'Innovation Lab, Koramangala',
-      attendees: 100,
-      category: 'networking',
-      image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=300&fit=crop',
-      description: 'Watch promising startups pitch to top investors',
-      status: 'open'
-    }
+    // {
+    //   id: 1,
+    //   title: 'Tech Innovation Summit 2025',
+    //   date: '2025-07-15',
+    //   time: '09:00 AM',
+    //   location: 'Convention Center, Bengaluru',
+    //   attendees: 500,
+    //   category: 'conference',
+    //   image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=300&fit=crop',
+    //   description: 'Join industry leaders for cutting-edge tech discussions and networking',
+    //   status: 'filling-fast'
+    // },
+    // {
+    //   id: 2,
+    //   title: 'AI & Machine Learning Workshop',
+    //   date: '2025-07-08',
+    //   time: '02:00 PM',
+    //   location: 'Tech Hub, HSR Layout',
+    //   attendees: 50,
+    //   category: 'workshop',
+    //   image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=300&fit=crop',
+    //   description: 'Hands-on workshop with AI experts and practical sessions',
+    //   status: 'open'
+    // },
+    // {
+    //   id: 3,
+    //   title: 'Startup Pitch Night',
+    //   date: '2025-07-20',
+    //   time: '06:00 PM',
+    //   location: 'Innovation Lab, Koramangala',
+    //   attendees: 100,
+    //   category: 'networking',
+    //   image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=300&fit=crop',
+    //   description: 'Watch promising startups pitch to top investors',
+    //   status: 'open'
+    // }
   ];
 
   const pastEvents: Event[] = [
@@ -465,7 +465,11 @@ const EventsComponent = () => {
             </p>
           </div>
 
+
           {/* Desktop Grid */}
+          {upcomingEvents.length==0 &&
+            <div className="text-center text-primary">No upcoming events found.</div>
+          }
           <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {upcomingEvents.map((event) => renderUpcomingCard(event))}
           </div>
