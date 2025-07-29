@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 import { 
-  Code, PieChart, Stethoscope, PlayCircle, ChevronRight, MapPin, X
+  Code, PieChart, Stethoscope, PlayCircle,  MapPin, X,Dot
 } from 'lucide-react';
 
 type SchoolKey = 'technology' | 'management' | 'healthcare';
@@ -176,7 +176,7 @@ const OurSchools = () => {
               <div className="grid gap-3 sm:gap-4">
                 {schools[activeSchool].departments.map((dept, i) => (
                   <div key={i} className="flex items-center gap-2 sm:gap-3 p-3 sm:p-4 bg-blue-50 rounded-lg">
-                    <ChevronRight size={14} className="text-secondary flex-shrink-0 sm:w-4 sm:h-4" />
+                    <Dot size={10} className="text-secondary flex-shrink-0 w-5 h-5 sm:w-10 sm:h-10" />
                     <span className="text-sm sm:text-base text-blue-900">{dept}</span>
                   </div>
                 ))}

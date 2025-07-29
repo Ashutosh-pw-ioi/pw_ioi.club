@@ -44,7 +44,7 @@ const locations: LocationData[] = [
     id: 'bengaluru',
     name: 'Bengaluru',
     available: true,
-    batches: ['2023', '2024', '2025']
+    batches: ['2023', '2024']
   },
   {
     id: 'pune',
@@ -55,6 +55,12 @@ const locations: LocationData[] = [
   {
     id: 'noida',
     name: 'Noida',
+    available: false,
+    batches: ['2025']
+  },
+  {
+    id:'luchnow',
+    name: 'Lucknow',
     available: false,
     batches: ['2025']
   }
