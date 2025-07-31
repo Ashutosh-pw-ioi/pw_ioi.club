@@ -15,7 +15,7 @@ const AcademicsPage = () => {
     { title: 'Minli', school: 'Technology', description:"Minli is a powerful URL shortener that lets you create, customize, and manage links with features like password protection, expiry control, QR codes, analytics, and one-click shortening—all in one place." ,link:'https://minli.info' },
     { title: 'IndieCode', school: 'Technology', description:"IndieCode is a DSA learning platform offering curated problems, AI guidance, video solutions, student profiles, achievement tracking, and upcoming contest schedules to help learners stay consistent and improve.",link:"https://indiecode.vercel.app/" },
     // { title: 'LeapX', school: 'Technology', description:"",link:" https://www.pwleapx.com/"},
-    // { title: 'Smart City Solutions', school:"Technology" ,description:"",link:""}
+    { title: 'Space Invader Game', school:"Technology" ,description:"This is a fun space shooting game where you control a spaceship. Move left or right, shoot aliens, and try to survive. The more aliens you destroy, the higher your score!",link:"https://space-invader-45.vercel.app/"}
   ];
 
   const handleProjectClick = (link: string) => {
