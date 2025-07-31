@@ -3,6 +3,7 @@ import { useRef, useState } from 'react';
 import Image from 'next/image';
 import { PDFDownloadLink, Document, Page, Text, View, StyleSheet, Image as PDFImage } from '@react-pdf/renderer';
 const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
+console.log(baseUrl)
 interface StudentData {
   studentName: string;
   courseName: string;

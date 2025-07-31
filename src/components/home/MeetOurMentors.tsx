@@ -33,14 +33,7 @@ const MeetOurMentors = () => {
       company: 'J.P.Morgan',
       companyLogo: '🏦'
     },
-    {
-      id: 5,
-      name: 'Syed Zabi Ulla',
-      role: 'Java/C++',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Syed%20Zabi%20-%20Syed%20Zabi%20Ulla%20(1)-min.JPG?updatedAt=1749837457137',
-      company: 'Decentro',
-      companyLogo: '💼'
-    },
+  
     {
       id: 6,
       name: 'Nitin M',
@@ -73,6 +66,46 @@ const MeetOurMentors = () => {
       company: 'Google',
       companyLogo: '🔍'
     },
+      {
+      id: 5,
+      name: 'Syed Zabi Ulla',
+      role: 'Java/C++',
+      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Syed%20Zabi%20-%20Syed%20Zabi%20Ulla%20(1)-min.JPG?updatedAt=1749837457137',
+      company: 'Decentro',
+      companyLogo: '💼'
+    },
+       {
+      id: 11,
+      name: 'Janishar Ali Anwar',
+      role: 'Web Development',
+      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/ali-min.JPG?updatedAt=1749631912662',
+      company: 'Decentro',
+      companyLogo: '💼'
+    },
+    {
+      id:12,
+      name:"Dr. Sapna Nibsaiya",
+      role:"Cunsumer Behaviour/Economics",
+      image:"https://ik.imagekit.io/s0kb1s3cx3/PWIOI/sapna-min.JPG?updatedAt=1749837456863",
+    },{
+      id:13,
+      name:"Prakash Nimbalar",
+      role:"Retail Management",
+      image:"https://ik.imagekit.io/s0kb1s3cx3/PWIOI/nimbalkar-min.JPG?updatedAt=1749631912481",
+
+    },
+    {
+      id:14,
+      name:"Gopal Sharma",
+      role:"Critical Thinking",
+      image:"https://ik.imagekit.io/s0kb1s3cx3/PWIOI/gopalSir.jpg?updatedAt=1749828781191"
+    },
+    {
+      id:15,
+      name:"Saran S",
+      role:"Business Communication/Career Excellence",
+      image:"https://ik.imagekit.io/s0kb1s3cx3/PWIOI/SARAN%20S%20B.jpg?updatedAt=1753869671237"
+    }
   ];
 
   // Dynamic items per view based on screen size
@@ -170,14 +203,14 @@ const MeetOurMentors = () => {
             <button
               onClick={prevSlide}
               disabled={currentIndex === 0}
-              className="w-10 h-10 lg:w-12 lg:h-12 text-primary bg-accent rounded-full border border-primary flex items-center justify-center hover:text-white hover:bg-primary transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-10 h-10 lg:w-12 lg:h-12 cursor-pointer text-primary bg-accent rounded-full border border-primary flex items-center justify-center hover:text-white hover:bg-primary transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <ChevronLeft className="w-5 h-5 lg:w-6 lg:h-6" />
             </button>
             <button
               onClick={nextSlide}
               disabled={currentIndex >= maxIndex}
-              className="w-10 h-10 lg:w-12 lg:h-12 text-primary bg-accent rounded-full border border-primary flex items-center justify-center hover:text-white hover:bg-primary transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-10 h-10 lg:w-12 lg:h-12 cursor-pointer text-primary bg-accent rounded-full border border-primary flex items-center justify-center hover:text-white hover:bg-primary transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <ChevronRight className="w-5 h-5 lg:w-6 lg:h-6" />
             </button>
@@ -194,7 +227,7 @@ const MeetOurMentors = () => {
           {visibleMentors.map((mentor) => (
             <div
               key={mentor.id}
-              className="group cursor-pointer"
+              className="group"
             >
               {/* Mentor Card */}
               <div className="relative overflow-hidden rounded-2xl hover:scale-105 transition-transform duration-300">

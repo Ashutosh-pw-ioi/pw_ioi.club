@@ -52,7 +52,7 @@ const HeroSection = () => {
               <Link href="/campus-life">
                 <Button
                   size="lg"
-                  className="w-full sm:w-auto bg-accent hover:bg-accent-dark text-accent-foreground font-semibold px-5 sm:px-10 py-5 sm:py-4 text-xl sm:text-xl transition-all duration-300 hover:scale-105 shadow-lg cursor-pointer"
+                  className="w-full sm:w-auto bg-accent hover:bg-accent-dark text-accent-foreground font-semibold px-5 sm:px-10 py-5 sm:py-8 text-xl sm:text-xl transition-all duration-300 hover:scale-105 shadow-lg cursor-pointer"
                 >
                   Explore Campus
                 </Button>
