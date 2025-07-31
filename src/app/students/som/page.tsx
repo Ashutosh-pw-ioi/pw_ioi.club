@@ -187,7 +187,7 @@ const ManagementPage: React.FC = () => {
           className={`flex items-center gap-1 px-3 py-2 rounded-lg font-medium transition-all duration-300 ${
             currentPage === 1
               ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-              : 'bg-white/80 text-primary hover:bg-primary/10 shadow-md hover:shadow-lg'
+              : 'bg-white/80 cursor-pointer text-primary hover:bg-primary/10 shadow-md hover:shadow-lg'
           }`}
         >
           <ChevronLeft className="w-4 h-4" />
@@ -205,7 +205,7 @@ const ManagementPage: React.FC = () => {
                 page === currentPage
                   ? 'bg-primary text-white shadow-lg'
                   : typeof page === 'number'
-                  ? 'bg-white/80 text-primary hover:bg-primary/10 shadow-md hover:shadow-lg'
+                  ? 'bg-white/80 cursor-pointer text-primary hover:bg-primary/10 shadow-md hover:shadow-lg'
                   : 'bg-transparent text-secondary cursor-default'
               }`}
             >
@@ -221,7 +221,7 @@ const ManagementPage: React.FC = () => {
           className={`flex items-center gap-1 px-3 py-2 rounded-lg font-medium transition-all duration-300 ${
             currentPage === totalPages
               ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-              : 'bg-white/80 text-primary hover:bg-primary/10 shadow-md hover:shadow-lg'
+              : 'bg-white/80 cursor-pointer text-primary hover:bg-primary/10 shadow-md hover:shadow-lg'
           }`}
         >
           <span className="hidden sm:inline">Next</span>
@@ -266,7 +266,7 @@ const ManagementPage: React.FC = () => {
                     activeLocation === location.id
                       ? 'bg-accent text-accent-foreground shadow-lg transform scale-105'
                       : location.available
-                      ? 'bg-white/80 text-primary hover:bg-accent/20 hover:scale-105 shadow-md'
+                      ? 'bg-white/80 cursor-pointer text-primary hover:bg-accent/20 hover:scale-105 shadow-md'
                       : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                   }`}
                 >
@@ -298,7 +298,7 @@ const ManagementPage: React.FC = () => {
                     className={`px-6 py-2 rounded-lg font-medium transition-all duration-300 ${
                       activeBatch === batch
                         ? 'bg-primary text-white shadow-lg'
-                        : 'bg-white/80 text-primary hover:bg-primary/10 shadow-md'
+                        : 'bg-white/80 cursor-pointer text-primary hover:bg-primary/10 shadow-md'
                     }`}
                   >
                     {batch} Batch
