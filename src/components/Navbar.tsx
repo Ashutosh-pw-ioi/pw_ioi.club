@@ -76,20 +76,19 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-  <Link href="/">
-    <Image 
-      src="https://ik.imagekit.io/s0kb1s3cx3/PWIOI/pwioi.webp?updatedAt=1749631481920" 
-      alt="PWIOI logo" 
-      width={100} 
-      height={30} 
-      className="font-poppins font-bold text-2xl text-primary"
-    />
-  </Link>
-</div>
-
+            <Link href="/">
+              <Image 
+                src="https://ik.imagekit.io/s0kb1s3cx3/PWIOI/pwioi.webp?updatedAt=1749631481920" 
+                alt="PWIOI logo" 
+                width={100} 
+                height={30} 
+                className="font-poppins font-bold text-2xl text-primary"
+              />
+            </Link>
+          </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {menuItems.map((item) => (
                 <Link
@@ -150,7 +149,7 @@ const Navbar = () => {
           </div>
 
           {/* Student Login Button */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Link href="https://production.dx14u5jslysdl.amplifyapp.com/auth/login/student">
               <Button className="bg-accent cursor-pointer hover:bg-accent-dark text-accent-foreground font-medium transition-colors duration-200">
                 <CircleUser className="w-4 h-4 mr-2" />
@@ -160,10 +159,10 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <Button
               variant="ghost"
-              size="sm"
+              size="lg"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-primary"
             >
@@ -174,7 +173,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <div className="px-3 pt-3 pb-4 space-y-2 bg-cream-base rounded-lg mt-2 max-h-[calc(100vh-80px)] overflow-y-auto">
               {menuItems.map((item) => (
                 <Link
@@ -204,7 +203,6 @@ const Navbar = () => {
                 {/* Mobile Students Dropdown Content */}
                 {isMobileStudentsOpen && (
                   <div className="mt-2 space-y-2 px-3">
-                    
                     {schools.map((school) => (
                       <Link
                         key={school.id}
@@ -213,10 +211,8 @@ const Navbar = () => {
                         className="flex items-center justify-between w-full px-4 py-3 text-sm bg-white border border-gray-200 rounded-lg hover:bg-accent/10 hover:border-accent transition-colors duration-200"
                       >
                         <span className="font-medium text-gray-700">{school.name}</span>
-                        
                       </Link>
                     ))}
-                    
                   </div>
                 )}
               </div>
@@ -224,8 +220,7 @@ const Navbar = () => {
               {/* Mobile Login Button */}
               <Link href="https://production.dx14u5jslysdl.amplifyapp.com/auth/login/student">
                 <div className="border-t border-gray-200 pt-3">
-                  <Button
-                    className="w-full bg-accent hover:bg-accent-dark text-accent-foreground font-medium py-3">
+                  <Button className="w-full bg-accent hover:bg-accent-dark text-accent-foreground font-medium py-3">
                     <CircleUser className="w-4 h-4 mr-2" />
                     Student Login
                   </Button>

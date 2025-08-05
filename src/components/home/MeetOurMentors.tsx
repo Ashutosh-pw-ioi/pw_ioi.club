@@ -3,111 +3,12 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Teachers from "@/data/bengaluru/teachers/teachers.json"
 
 const MeetOurMentors = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const mentors = [
-    
-    {
-      id: 2,
-      name: 'Saurabh Moharikar',
-      role: 'AI/ML',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/saurabh-min.JPG?updatedAt=1749837457042',
-      company: 'Red Hat',
-      companyLogo: '🎩'
-    },
-    {
-      id: 3,
-      name: 'Shubham Gautam',
-      role: 'Operating System',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/shubham-min.JPG?updatedAt=1749837456962',
-      company: 'Navi',
-      companyLogo: '🚀'
-    },
-    {
-      id: 4,
-      name: 'Kinjal Sengupta',
-      role: 'Career Excellence',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/kinjal-min.JPG?updatedAt=1749837456280',
-      company: 'J.P.Morgan',
-      companyLogo: '🏦'
-    },
-  
-    {
-      id: 6,
-      name: 'Nitin M',
-      role: 'Web Development',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/nitin-min.JPG?updatedAt=1749837457049',
-      company: 'Google',
-      companyLogo: '🔍'
-    },
-    {
-      id: 7,
-      name: 'Anisha Koshy',
-      role: 'English',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/anisha-min.JPG?updatedAt=1749837456915',
-      company: 'Amazon',
-      companyLogo: '📦'
-    },
-    {
-      id: 8,
-      name: 'Satya Sai Neerukonda',
-      role: 'DSA',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/satyasai-min.JPG?updatedAt=1749836127534',
-      company: 'Google',
-      companyLogo: '🔍'
-    },
-    {
-      id: 10,
-      name: 'Kaibalya Biswal',
-      role: 'Python',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/KB-min.JPG?updatedAt=1749837638557',
-      company: 'Google',
-      companyLogo: '🔍'
-    },
-      {
-      id: 5,
-      name: 'Syed Zabi Ulla',
-      role: 'Java/C++',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Syed%20Zabi%20-%20Syed%20Zabi%20Ulla%20(1)-min.JPG?updatedAt=1749837457137',
-      company: 'Decentro',
-      companyLogo: '💼'
-    },
-       {
-      id: 11,
-      name: 'Janishar Ali Anwar',
-      role: 'Web Development',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/ali-min.JPG?updatedAt=1749631912662',
-      company: 'Decentro',
-      companyLogo: '💼'
-    },
-    {
-      id:12,
-      name:"Dr. Sapna Nibsaiya",
-      role:"Cunsumer Behaviour/Economics",
-      image:"https://ik.imagekit.io/s0kb1s3cx3/PWIOI/sapna-min.JPG?updatedAt=1749837456863",
-    },{
-      id:13,
-      name:"Prakash Nimbalar",
-      role:"Retail Management",
-      image:"https://ik.imagekit.io/s0kb1s3cx3/PWIOI/nimbalkar-min.JPG?updatedAt=1749631912481",
-
-    },
-    {
-      id:14,
-      name:"Gopal Sharma",
-      role:"Critical Thinking",
-      image:"https://ik.imagekit.io/s0kb1s3cx3/PWIOI/gopalSir.jpg?updatedAt=1749828781191"
-    },
-    {
-      id:15,
-      name:"Saran S",
-      role:"Business Communication/Career Excellence",
-      image:"https://ik.imagekit.io/s0kb1s3cx3/PWIOI/SARAN%20S%20B.jpg?updatedAt=1753869671237"
-    }
-  ];
-
+  const mentors = Teachers;
   // Dynamic items per view based on screen size
   const getItemsPerView = () => {
     if (typeof window === 'undefined') return 5;
