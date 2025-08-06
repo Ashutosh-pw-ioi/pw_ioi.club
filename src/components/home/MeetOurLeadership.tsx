@@ -3,39 +3,9 @@
 import Image from 'next/image';
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import leadershipData from '@/data/bengaluru/leaders/leadarShip.json';
 
-const leadership = [
-  {
-    name: 'Gopal Sharma',
-    role: 'Chief Operating Officer',
-    description:
-      'Gold Medalist from IIT-BHU, COO at Physics Wallah, passionate about learning, growth, and revolutionizing education.',
-    image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/gopal-min.jpg?updatedAt=1749632398507',
-    linkedin: 'https://www.linkedin.com/in/gopal-sharma-344290293',
-    isTopLeader: true,
-  },
-  {
-    name: 'Janishar Ali',
-    role: 'Head, School of Technology',
-    
-    image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/ali-min.JPG?updatedAt=1749631912662',
-    linkedin: 'https://www.linkedin.com/in/janishar-ali/',
-  },
-  {
-    name: 'Dr. Sapna Nibsaiya',
-    role: 'Head, School of Management',
-    
-    image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/sapna-min.JPG?updatedAt=1749837456863',
-    linkedin: 'https://www.linkedin.com/in/sapnanibsaiya/',
-  },
-  {
-    name: 'Dr Satishpuri Gosavi',
-    role: 'Head, School of Healthcare',
-    
-    image: '/satishpuri.jpeg',
-    linkedin: 'https://www.linkedin.com/in/dr-satishpuri-gosavi-88352656/',
-  },
-];
+const leadership = leadershipData;
 
 const MeetOurLeadership = () => {
   const topLeader = leadership.find((l) => l.isTopLeader);
@@ -75,14 +45,14 @@ const MeetOurLeadership = () => {
                 
                 <div className="text-center flex-1 flex flex-col justify-center">
                   <h3 className="text-3xl font-semibold text-primary mb-3 font-poppins">{topLeader.name}</h3>
-                  <p className="text-accent font-medium text-secondary mb-6 text-sm">{topLeader.role}</p>
+                  <p className="font-medium text-secondary mb-6 text-sm">{topLeader.role}</p>
                   <p className="text-primary/80 text-base leading-relaxed mb-8 font-open-sans max-w-md">
                     {topLeader.description}
                   </p>
                 </div>
                 
                 <Button
-                  className="mt-auto bg-accent cursor-pointer text-accent-foreground hover:bg-accent-dark transition-all duration-200 hover:scale-105 px-8 py-3 text-base"
+                  className="border-primary/20 mt-auto bg-accent cursor-pointer text-accent-foreground hover:bg-primary hover:text-white transition-all duration-200 hover:scale-105 px-8 py-3 text-base"
                   onClick={() => window.open(topLeader.linkedin, '_blank')}
                 >
                   Connect on LinkedIn
@@ -119,7 +89,7 @@ const MeetOurLeadership = () => {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="border-primary/20 text-primary hover:bg-primary hover:text-white transition-all cursor-pointer duration-200 hover:scale-105"
+                        className="border-primary/20 text-primary bg-accent hover:bg-primary hover:text-white transition-all cursor-pointer duration-200 hover:scale-105"
                         onClick={() => window.open(leader.linkedin, '_blank')}
                       >
                         Connect on LinkedIn

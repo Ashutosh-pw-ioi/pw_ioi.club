@@ -38,6 +38,9 @@ const Footer = () => {
               <li>
                 <Link href="/startup_grants" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">Startup Grants</Link>
               </li>
+               <li>
+                <Link href="/attendance" className="font-open-sans text-sm text-white/80 hover:text-accent transition-colors duration-300">Attendance</Link>
+              </li>
             </ul>
           </div>
 
@@ -119,7 +122,7 @@ const Footer = () => {
               </p>
               <div className="flex items-center space-x-2 ">
                 <span className='inline-block h-5 w-8'><Mail className="text-white/80 " /></span>
-                <a href="mailto:studentsuccess@pwioi.com" className="font-open-sans text-white/80 hover:text-accent transition-colors duration-300">studentsuccess@pwioi.com</a>
+                <a href="mailto:studentsuccess@pwioi.com" className="font-open-sans text-white/80 hover:text-accent overflow-hidden lg:overflow-visible transition-colors duration-300">studentsuccess@pwioi.com</a>
               </div>
             </div>
           </div>
