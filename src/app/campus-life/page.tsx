@@ -159,4 +159,4 @@ const CampusLifePage = () => {
   );
 };
 
-export default CampusLifePage;
+export default CampusLifePage;  

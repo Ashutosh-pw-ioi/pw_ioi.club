@@ -3,78 +3,12 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Teachers from "@/data/bengaluru/teachers/teachers.json"
 
 const MeetOurMentors = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const mentors = [
-    
-    {
-      id: 2,
-      name: 'Saurabh Moharikar',
-      role: 'AI/ML',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/saurabh-min.JPG?updatedAt=1749837457042',
-      company: 'Red Hat',
-      companyLogo: '🎩'
-    },
-    {
-      id: 3,
-      name: 'Shubham Gautam',
-      role: 'Operating System',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/shubham-min.JPG?updatedAt=1749837456962',
-      company: 'Navi',
-      companyLogo: '🚀'
-    },
-    {
-      id: 4,
-      name: 'Kinjal Sengupta',
-      role: 'Career Excellence',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/kinjal-min.JPG?updatedAt=1749837456280',
-      company: 'J.P.Morgan',
-      companyLogo: '🏦'
-    },
-    {
-      id: 5,
-      name: 'Syed Zabi Ulla',
-      role: 'Java/C++',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Syed%20Zabi%20-%20Syed%20Zabi%20Ulla%20(1)-min.JPG?updatedAt=1749837457137',
-      company: 'Decentro',
-      companyLogo: '💼'
-    },
-    {
-      id: 6,
-      name: 'Nitin M',
-      role: 'Web Development',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/nitin-min.JPG?updatedAt=1749837457049',
-      company: 'Google',
-      companyLogo: '🔍'
-    },
-    {
-      id: 7,
-      name: 'Anisha Koshy',
-      role: 'English',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/anisha-min.JPG?updatedAt=1749837456915',
-      company: 'Amazon',
-      companyLogo: '📦'
-    },
-    {
-      id: 8,
-      name: 'Satya Sai Neerukonda',
-      role: 'DSA',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/satyasai-min.JPG?updatedAt=1749836127534',
-      company: 'Google',
-      companyLogo: '🔍'
-    },
-    {
-      id: 10,
-      name: 'Kaibalya Biswal',
-      role: 'Python',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/KB-min.JPG?updatedAt=1749837638557',
-      company: 'Google',
-      companyLogo: '🔍'
-    },
-  ];
-
+  const mentors = Teachers;
   // Dynamic items per view based on screen size
   const getItemsPerView = () => {
     if (typeof window === 'undefined') return 5;
@@ -170,14 +104,14 @@ const MeetOurMentors = () => {
             <button
               onClick={prevSlide}
               disabled={currentIndex === 0}
-              className="w-10 h-10 lg:w-12 lg:h-12 text-primary bg-accent rounded-full border border-primary flex items-center justify-center hover:text-white hover:bg-primary transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-10 h-10 lg:w-12 lg:h-12 cursor-pointer text-primary bg-accent rounded-full border border-primary flex items-center justify-center hover:text-white hover:bg-primary transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <ChevronLeft className="w-5 h-5 lg:w-6 lg:h-6" />
             </button>
             <button
               onClick={nextSlide}
               disabled={currentIndex >= maxIndex}
-              className="w-10 h-10 lg:w-12 lg:h-12 text-primary bg-accent rounded-full border border-primary flex items-center justify-center hover:text-white hover:bg-primary transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-10 h-10 lg:w-12 lg:h-12 cursor-pointer text-primary bg-accent rounded-full border border-primary flex items-center justify-center hover:text-white hover:bg-primary transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <ChevronRight className="w-5 h-5 lg:w-6 lg:h-6" />
             </button>
@@ -194,7 +128,7 @@ const MeetOurMentors = () => {
           {visibleMentors.map((mentor) => (
             <div
               key={mentor.id}
-              className="group cursor-pointer"
+              className="group"
             >
               {/* Mentor Card */}
               <div className="relative overflow-hidden rounded-2xl hover:scale-105 transition-transform duration-300">

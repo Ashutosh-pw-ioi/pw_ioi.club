@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "Rishabh Jain",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Rishabh_Jain_uk6ajq.jpg?updatedAt=1754302088428",
+    "company": "Growth School",
+    "role": "Corporate Outreach Associate"
+  },
+  {
+    "id": 4,
+    "name": "Nimish Agrawal",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Nimish%20mishra-min-min.jpg?updatedAt=1753709233509",
+    "company": "Physics Wallah IOI",
+    "role": "Brand strategist"
+  },
+  {
+    "id": 5,
+    "name": "Deepali Kumari",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/deepali%20(3)-min.jpg?updatedAt=1753709763763",
+    "company": "Hue Learn",
+    "role": "AI Content Intern"
+  },
+  {
+    "id": 6,
+    "name": "Harsh Bharwani",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/IMG_20241231_153905%20-%20Harsh%20Bharwani.jpg?updatedAt=1753708567506",
+    "company": "Hue Learn",
+    "role": "AI Content Intern"
+  },
+  {
+    "id": 7,
+    "name": "Parv Manglani",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/parv.jpeg?updatedAt=1753870795557",
+    "company": "Hue Learn",
+    "role": "AI Content Intern"
+  },
+  {
+    "id": 9,
+    "name": "Abhinav Jain",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Abhinav%20Jain-min.JPG?updatedAt=1753707745122",
+    "company": "COMMUNITY 55",
+    "role": "Strategy Intern"
+  },
+  {
+    "id": 12,
+    "name": "Ankit Raj",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/ankit.jpeg?updatedAt=1753871291869",
+    "company": "Physics Wallah IOI",
+    "role": "Frontend Developer"
+  },
+  {
+    "id": 13,
+    "name": "Nishchay Bhatia",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/20250626_224106_0000%20-%20Nishchay%20Bhatia.png?updatedAt=1752220016989",
+    "company": "Physics Wallah Central Office",
+    "role": "Frontend Developer"
+  },
+  {
+    "id": 14,
+    "name": "Aman Raj Gupta",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/me%20(1)%20-%20Aman%20Raj%20Gupta%20(1).png?updatedAt=1753708489959",
+    "company": "Physics Wallah Central Office",
+    "role": "Backend Developer"
+  },
+  {
+    "id": 16,
+    "name": "Harsh Tiwari",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/IMG_20250708_18535540%20(1).jpeg?updatedAt=1753710816573",
+    "company": "Physics Wallah IOI",
+    "role": "Brand strategist"
+  },
+  {
+    "id": 17,
+    "name": "Harish Kumar",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/harish.jpeg?updatedAt=1753870669728",
+    "company": "Physics Wallah IOI",
+    "role": "Placement Coordinator"
+  },
+  {
+    "id": 19,
+    "name": "Ganesh Agarwal",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/DSC02846.JPG?updatedAt=1753710954594",
+    "company": "Zidio Development",
+    "role": "Web Developer"
+  },
+  {
+    "id": 21,
+    "name": "Rohit Makani",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/DSC02868-min.JPG?updatedAt=1753712042962",
+    "company": "Physics Wallah IOI",
+    "role": "AI Intern"
+  },
+  {
+    "id": 22,
+    "name": "Aryan Chauhan",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/120A7487%20-%20Aryan%20Chauhan-min.JPG?updatedAt=1752248876938",
+    "company": "Physics Wallah IOI",
+    "role": "Frontend Developer"
+  },
+  {
+    "id": 23,
+    "name": "Jivan Jamdar",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/jivan.jpeg?updatedAt=1752220249286",
+    "company": "Physics Wallah IOI",
+    "role": "Product Manager"
+  },
+  {
+    "id": 24,
+    "name": "Ashutosh Tiwari",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Ashutosh_Tiwari_uuyqqj.jpg?updatedAt=1754302111426",
+    "company": "Physics Wallah IOI",
+    "role": "Corporate Outreach Associate"
+  },
+  {
+    "id": 25,
+    "name": "Karthikeya Bendi",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/karthikeya%20-%20karthikeya%20bendi%20(1)-min.jpg?updatedAt=1753712245834",
+    "company": "Advait",
+    "role": "n8n Specialist"
+  },
+  {
+    "id": 26,
+    "name": "Mohammad Shoyeb Ansari",
+    "image": "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/shyebh.jpeg?updatedAt=1753698435882",
+    "company": "Physics Wallah IOI",
+    "role": "Backend Developer"
+  }
+]

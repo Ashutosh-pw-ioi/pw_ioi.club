@@ -119,7 +119,7 @@ const OurSchools = () => {
 
   return (
     <>
-      <section className="max-w-7xl pt-12 mx-auto px-5 sm:px-6 lg:px-12 bg-white">
+      <section className="max-w-7xl pt-12 pb-2 mb-8 mx-auto px-5 sm:px-6 lg:px-12 bg-white">
         <div className="mb-16 sm:mb-20">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-4 font-poppins">Our Schools</h2>
@@ -138,7 +138,7 @@ const OurSchools = () => {
                   <button
                     key={key}
                     onClick={() => setActiveSchool(key)}
-                    className={`flex items-center gap-2 sm:gap-3 px-3 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold transition-all duration-300 text-sm sm:text-base ${
+                    className={`flex items-center gap-2 cursor-pointer sm:gap-3 px-3 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold transition-all duration-300 text-sm sm:text-base ${
                       isActive 
                         ? 'bg-secondary text-white shadow-lg' 
                         : 'bg-white text-primary hover:shadow-md border border-gray-200'
